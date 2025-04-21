@@ -2,6 +2,7 @@
 
 import supabase from "@/config/supabase-config";
 import bcrypt from 'bcryptjs';
+import jwt from "jsonwebtoken";
 
 export const registerNewUser = async ({ name, email, password, role }: {
     name: string,
@@ -55,3 +56,56 @@ export const registerNewUser = async ({ name, email, password, role }: {
         }
     }
 }
+
+export const loginUser = async ({ email, password, role }: { email: string; password: string; role: string }) => {
+    try {
+
+        // Rechercher l'utilisateur grâce à son addresse mail
+        const { data, error } = await supabase.from("user_profiles").select("*").eq("email", email);
+        if (error) {
+            return {
+                success: false,
+                message: error.message,
+            };
+        }
+
+        if (data.length === 0) {
+            return {
+                success: false,
+                message: "Utilisateur non trouvé",
+            };
+        }
+
+        if (data[0].role !== role) {
+            return {
+                success: false,
+                message: "Rôle invalide",
+            };
+        }
+
+        // Vérifier le passport en les comparant
+        const isPasswordValid = bcrypt.compareSync(password, data[0].password);
+        if (!isPasswordValid) {
+            return {
+                success: false,
+                message: "Mot de passe invalide",
+            };
+        }
+
+        // Générer un JWT Token
+        const token = jwt.sign(
+            { id: data[0].id }, process.env.JWT_SECRET!, {
+            expiresIn: "1d",
+        });
+
+        return {
+            success: true,
+            data: token,
+        };
+    } catch (error:any) {
+        return {
+            success: false,
+            message: error.message,
+        };
+    }
+};

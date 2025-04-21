@@ -16,9 +16,14 @@ import { Input } from "@/components/ui/input";
 import { Button } from '@/components/ui/button';
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Link from 'next/link';
+import toast from 'react-hot-toast';
+import { loginUser } from '@/actions/users';
+import Cookies from "js-cookie";
+import { useRouter } from 'next/navigation';
 
 const LoginPage = () => {
-
+    const [loading, setLoading] = React.useState(false);
+    const router = useRouter();
     const formSchema = z.object({
         email: z.string().email(),
         password: z.string().min(2).max(50),
@@ -34,10 +39,22 @@ const LoginPage = () => {
         },
     })
 
-    function onSubmit(values: z.infer<typeof formSchema>) {
-        // Do something with the form values.
-        // ✅ This will be type-safe and validated.
-        console.log(values)
+    async function onSubmit(values: z.infer<typeof formSchema>) {
+        try {
+            setLoading(true);
+            const response: any = await loginUser(values);
+            if (response.success) {
+                toast.success("Connexion réussi");
+                Cookies.set("token", response.data);
+                router.push(`/${values.role}/dashboard`);
+            } else {
+                toast.error(response.message);
+            }
+        } catch (error: any) {
+            toast.error(error.message);
+        } finally {
+            setLoading(false);
+        }
     }
 
     return (
@@ -125,7 +142,7 @@ const LoginPage = () => {
                                 Je n'ai pas encore de compte 
                                 <Link href="/register" className='underline'>S'enregistrer</Link>
                             </div>
-                            <Button type="submit">Submit</Button>
+                            <Button disabled={loading} type="submit">Submit</Button>
                         </div>
                     </form>
                 </Form>
