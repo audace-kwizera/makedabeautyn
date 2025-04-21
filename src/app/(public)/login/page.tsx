@@ -46,6 +46,7 @@ const LoginPage = () => {
             if (response.success) {
                 toast.success("Connexion réussi");
                 Cookies.set("token", response.data);
+                Cookies.set("role", values.role);
                 router.push(`/${values.role}/dashboard`);
             } else {
                 toast.error(response.message);
