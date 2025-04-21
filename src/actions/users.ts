@@ -102,10 +102,35 @@ export const loginUser = async ({ email, password, role }: { email: string; pass
             success: true,
             data: token,
         };
-    } catch (error:any) {
+    } catch (error: any) {
         return {
             success: false,
             message: error.message,
         };
     }
 };
+
+export const getCurrentUser = async (token: string) => {
+    try {
+        const decoded: any = jwt.verify(token, process.env.JWT_SECRET!);
+        const userId = decoded.id;
+
+        const { data, error } = await supabase.from("user_profiles").select("*").eq("id", userId);
+        if (!data || data?.length === 0 || error) {
+            return {
+                success: false,
+                message: "Utilisateur non trouvé",
+            };
+        }
+
+        return {
+            success: true,
+            data: data[0],
+        }
+    } catch (error: any) {
+        return {
+            success: false,
+            message: error.message,
+        }
+    }
+}

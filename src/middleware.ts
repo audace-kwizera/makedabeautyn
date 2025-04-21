@@ -16,11 +16,25 @@ export function middleware(request: NextRequest) {
 
     // Si la route est privé, et l'utilisateur authentifié puis redirigé vers la page dashboard
     if (!isPrivateRoute && token) {
-        return NextResponse.redirect(new URL('/user/dashboard', request.url))
+      const role = request.cookies.get('role')?.value
+        return NextResponse.redirect(new URL(`/${role}/dashboard`, request.url))
     }
 
     return NextResponse.next()
   } catch (error) {
     return NextResponse.error()
   }
+}
+
+export const config = {
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico, sitemap.xml, robots.txt (metadata files)
+     */
+    '/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',
+  ],
 }
