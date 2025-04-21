@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./styles/styles.css";
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: "Makeda Beauty",
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <Toaster />
       </body>
     </html>
   );

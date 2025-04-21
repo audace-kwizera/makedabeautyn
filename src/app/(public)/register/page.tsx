@@ -16,9 +16,13 @@ import { Input } from "@/components/ui/input";
 import { Button } from '@/components/ui/button';
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Link from 'next/link';
+import toast from 'react-hot-toast';
+import { registerNewUser } from '@/actions/users';
+import { useRouter } from 'next/navigation';
 
 const RegisterPage = () => {
-
+    const [loading, setLoading] = React.useState(false);
+    const router = useRouter();
     const formSchema = z.object({
         name: z.string().min(3),
         email: z.string().email(),
@@ -36,10 +40,21 @@ const RegisterPage = () => {
         },
     })
 
-    function onSubmit(values: z.infer<typeof formSchema>) {
-        // Do something with the form values.
-        // ✅ This will be type-safe and validated.
-        console.log(values)
+    async function onSubmit(values: z.infer<typeof formSchema>) {
+        try {
+            setLoading(true);
+            const response = await registerNewUser(values);
+            if (response.success) {
+                toast.success("Le compte a été crée avec succès");
+                router.push("/login");
+            } else {
+                toast.error(response.message);
+            }
+        } catch (error: any) {
+            toast.error(error.message);
+        } finally {
+            setLoading(false);
+        }
     }
 
     return (
@@ -55,8 +70,8 @@ const RegisterPage = () => {
 
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                      {/* Name */}
-                      <FormField
+                        {/* Name */}
+                        <FormField
                             control={form.control}
                             name="name"
                             render={({ field }) => (
@@ -142,7 +157,9 @@ const RegisterPage = () => {
                                 J'ai déjà un compte
                                 <Link href="/login" className='underline'>Se connecter</Link>
                             </div>
-                            <Button type="submit">Submit</Button>
+                            <Button type="submit"disabled={loading}>
+                                Submit
+                            </Button>
                         </div>
                     </form>
                 </Form>
