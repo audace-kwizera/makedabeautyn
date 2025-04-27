@@ -13,14 +13,15 @@ import { Calendar, LayoutDashboard, List, MessageCircle, User2 } from 'lucide-re
 import { usePathname, useRouter } from 'next/navigation'
 import toast from 'react-hot-toast'
 import Cookies from 'js-cookie'
+import usersGlobalStore, { IUsersGlobalStore } from '@/store/users-global-store'
 
 interface MenuItemsProps {
     openMenuItems: boolean;
     setOpenMenuItems: (openMenuItems: boolean) => void;
-    user: IUser;
 }
 
-function MenuItems({ openMenuItems, setOpenMenuItems, user }: MenuItemsProps) {
+function MenuItems({ openMenuItems, setOpenMenuItems }: MenuItemsProps) {
+    const { user } = usersGlobalStore() as IUsersGlobalStore;
     const pathname = usePathname();
     const router = useRouter();
 
@@ -86,7 +87,7 @@ function MenuItems({ openMenuItems, setOpenMenuItems, user }: MenuItemsProps) {
         }
     ];
 
-    const menuItemsToRender = user.role === "user" ? userMenuItems : salonSpaOwnerMenuItems;
+    const menuItemsToRender = user?.role === "user" ? userMenuItems : salonSpaOwnerMenuItems;
 
     return (
         <Sheet
