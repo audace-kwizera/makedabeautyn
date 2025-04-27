@@ -7,10 +7,10 @@ import React from 'react';
 
 const Homepage = () => {
   return (
-    <div className='flex flex-col'>
+    <div>
 
       {/* Header */}
-      <div className='container__header flex justify-between items center bg-white-200 py-5 px-20'>
+      <div className='container__header'>
         {/* Logo */}
         <div className='container__header__logo'>
           {/* Image */}
@@ -19,7 +19,7 @@ const Homepage = () => {
           </div>
           {/* Description */}
           <div className="container__header__logo__description">
-            <h1 className='container__header__logo__description__title font-bold! text-2xl'>Makeda Beauty</h1>
+            <h1 className='container__header__logo__description__title'>Makeda Beauty</h1>
           </div>
         </div>
 
@@ -102,9 +102,9 @@ const Homepage = () => {
       </div>
 
       {/* Corps */}
-      <div className='container__body bg-white mt-20 grid-cols-1 px-20 minh-h-[70vh] items-center grid gap-10'>
-        <div className='col-span-1'>
-          <div className='flex flex-col gap-5'>
+      <div className='container__body'>
+        <div>
+          <div>
 
             <Homecover></Homecover>
 
