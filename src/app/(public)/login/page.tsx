@@ -27,7 +27,7 @@ const LoginPage = () => {
     const formSchema = z.object({
         email: z.string().email(),
         password: z.string().min(2).max(50),
-        role: z.enum(["user", "makeda-beauty"]),
+        role: z.enum(["user", "salon-spa-owner"]),
     })
 
     const form = useForm<z.infer<typeof formSchema>>({
@@ -124,7 +124,7 @@ const LoginPage = () => {
                                             </FormItem>
                                             <FormItem className="flex items-center space-x-3 space-y-0">
                                                 <FormControl>
-                                                    <RadioGroupItem value="makeda-beauty" />
+                                                    <RadioGroupItem value="salon-spa-owner" />
                                                 </FormControl>
                                                 <FormLabel className="font-normal">
                                                     Prestataire

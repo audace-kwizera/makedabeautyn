@@ -1,0 +1,190 @@
+/*============================================== Background =============================================*/
+$background-color-primary: #FBF6F2;
+$background-color-second: #F4D993;
+$background-color-tertiairy: #704404;
+$background-color-fourth: #FFFFFF;
+$background-color-firth: transparent;
+$background-color-six: rgba(0, 0, 0, 0.7);
+$background-color-seven: #000000;
+$background-color-height: hsla(240, 7%, 61%, 0.15);
+$background-color-nine: #C29C65;
+
+/*============================================== Text Color ==============================================*/
+$text-color-primary: #000000;
+$text-color-second: #FFFFFF;
+$text-color-tertiairy: #704404;
+$text-color-four: rgba(102, 102, 102, 1);
+$text-color-firth: #C29C65;
+
+/*================================================ Navbar ===============================================*/
+$navbar-background-primary: #F2ECE1;
+$navbar-background-secondary: transparent;
+$navbar-background-tertiairy: #FFFFFF;
+$navbar-link-color-primary: #704404;
+$navbar-link-color-secondary: #FFFFFF;
+$navbar-link-color-tertiairy: #000000;
+$navbar-link-color-black: rgba(102, 102, 102, 1);
+
+/*============================================== Error color =============================================*/
+$background-light-error-color: #e69887;
+$background-error-color: #e63a14;
+$background-error-input: rgba(255, 0, 0, 0.031);
+$text-error-color: #FFFFFF;
+$text-error-color-secondary: #e63a14;
+
+
+/*=========================================== Success color ==============================================*/
+$background-light-success-color: #c1ff1c;
+$background-success-color: #78d23d;
+$text-success-color: #3aa346;
+$text-success-color-secondary: #007042;
+$text-success-color-tertiary: #FFFFFF;
+
+/*================================================ Button ================================================*/
+$button-background-color-primary: #704404;
+$button-color-primary: #F2ECE1;
+$button-background-color-second: transparent;
+$button-color-second: #704404;
+$button-color-tertiairy: #000000;
+$button-background-tertiairy: #d2b89c;
+
+/*================================================ Tooltip Background ================================================*/
+$tooltip-background-color-primary: rgba(255, 189, 90, .7);
+$tooltip-background-color-primary-hover: rgba(255, 189, 90, 1);
+
+
+
+/*============================================== Text Size ==============================================*/
+$text-very-very-big-size: 40px;
+$text-very-big-size: 25px;
+$text-big-size: 30px;
+$text-normal-size: 20px;
+$text-small-size: 18px;
+$text-very-small-size: 15px;
+
+/*============================================== Button Size ==============================================*/
+$button-normal-size: 15px;
+
+/*============================================== Navbar Size ==============================================*/
+$link-normal-size: 14px;
+
+/*============================================== list Size ==============================================*/
+$li-normal-size: 14px;
+$checkboxFontSizePrimary: 14px;
+
+/*============================================== input Color ==============================================*/
+
+$input-color-primary: #000000;
+$input-color-second: #FFFFFF;
+$input-color-tertiairy: #FFBD5A;
+
+
+/*================================================= Shadow ================================================*/
+$shadow-1: rgba(99, 99, 99, .2) 0 2px 8px 0;
+$shadow-2: rgba(99, 99, 99, .1) 0 0 4px 0;
+
+/*================================================= Border ================================================*/
+$border-color-primary: #000000;
+$border-color-secondary: #FFFFFF;
+$border-color-tertiairy: #E9E7E8;
+$border-color-fourth: #9D7A64;
+$border-color-firth: #FFBD5A;
+$border-color-six: rgba(210, 184, 156);
+
+/*============================================= Link  ============================================*/
+$linkBackgroundColorPrimary: #000000;
+$linkBackgroundColorSecondary: #FFFFFF;
+$linkBackgroundColorTertiary: transparent;
+
+$linkColorPrimary: #FFFFFF;
+$linkColorSecondary: #000000;
+$linkColorTertiary: #E9E7E8;
+$linkColorFourth: #9D7A64;
+$linkColorFirth: #FFBD5A;
+$linkColorSix: rgba(102, 102, 102, 1);
+$linkColorSeven: #C29C65;
+
+/*============================================= Link hover ============================================*/
+$linkBackgroundColorHoverPrimary: #FFFFFF;
+$linkBackgroundColorHoverSecondary: #000000;
+$linkBackgroundColorHoverTertiary: transparent;
+
+$linkColorHoverPrimary: #000000;
+$linkColorHoverSecondary: #FFFFFF;
+$linkColorHoverTertiary: rgba(102, 102, 102, 1);
+
+
+/*================================================= li ================================================*/
+$liBackgroundColorHoverPrimary: #FFFFFF;
+$liBackgroundColorHoverSecondary: #000000;
+$liBackgroundColorHoverTertiary: #FFBD5A;
+
+
+/*================================================= checkbox
+================================================*/
+$checkboxBackgroundColorHoverPrimary: #FFFFFF;
+$checkboxBackgroundColorHoverSecondary: #000000;
+$checkboxBackgroundColorHoverTertiary: #ccc;
+
+
+/*================================================= menu ================================================*/
+$menuBackgroundColorHoverPrimary: #FFFFFF;
+$menuBackgroundColorHoverSecondary: #000000;
+$menuBackgroundColorHoverTertiary: #ccc;
+
+/*================================================= search ================================================*/
+$searchBackgroundColorHoverPrimary: #FFFFFF;
+$searchBackgroundColorHoverSecondary: transparent;
+$searchBackgroundColorHoverTertiary: #eeeeeebc;
+
+/*============================================== Price color =============================================*/
+$priceColorPrimary: red;
+$priceColorHoverSecondary: black;
+
+/*============================================ Table Background ===========================================*/
+$background-table-color-primary: #FFBD5A;
+$background-table-color-second: #000000;
+$background-table-tertiairy: #E9E7E8;
+$background-table-fourth: #F2F2F2;
+
+/*============================================ Discount color ===========================================*/
+$discount-price-color-primary: #FFBD5A;
+$discount-price-color-secondary: #E9E7E8;
+
+/*============================================ Processing color ===========================================*/
+$not_processed: #e3503e;
+$processing: #54b7d3;
+$dispatched: #1e91cf;
+$cancelled: #e3d4d4;
+$completed: #4cb64c;
+
+/*============================================ Cubic Bezier ===========================================*/
+$cubic-bezier: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+/*============================================ Svg 
+===========================================*/
+$svg-fill-primary: #333;
+$svg-fill-secondary: #FFBD5A;
+$svg-fill-tertiairy: rgba(102, 102, 102, 1);
+$svg-fill-four: rgba(210, 184, 156, 1);
+
+$svg-error-color: #FFFFFF;
+
+$svg-width-mini: 10px;
+
+
+
+
+
+
+/* @include mobile() {
+    .title{
+        background-color: $background-color-primary;
+        display: none;
+    }
+}  */
+
+/*================================================= sidebar ================================================*/
+$background-sidebar-color-primary: #fe4a3f;
+$background-sidebar-color-second: #ffb51f;
+$background-sidebar-color-tertiairy: #4fea32;

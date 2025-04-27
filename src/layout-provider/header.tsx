@@ -1,7 +1,10 @@
+import { IUser } from '@/interfaces';
 import { Menu } from 'lucide-react'
 import React from 'react'
+import MenuItems from './menu-items';
 
-const Header = ({ user }: { user: any }) => {
+const Header = ({ user }: { user: IUser }) => {
+  const [openMenuItems, setOpenMenuItems] = React.useState(false);
   return (
     <div className='bg-primary p-5 text-white flex justify-between items-center'>
         {/* Titre */}
@@ -12,7 +15,18 @@ const Header = ({ user }: { user: any }) => {
             <h1 className="text-sm!">{user?.name}</h1>
 
             {/* Menu */}
-            <Menu className="text-orange-500 cursor-pointer" size={15} />
+            <Menu 
+              className="text-orange-500 cursor-pointer" 
+              size={15} 
+              onClick={() => setOpenMenuItems(true)}
+            />
+
+            {openMenuItems && (
+              <MenuItems 
+                openMenuItems={openMenuItems} 
+                setOpenMenuItems={setOpenMenuItems} 
+                user={user} />
+              )}
         </div>
     </div>
   )

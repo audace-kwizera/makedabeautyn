@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../utils/functions";
+
+.container {
+    &__footer {
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        min-width: 100vw;
+        gap: 2rem;
+        padding: 1rem 0;
+
+        &__logo {
+            display: grid;
+            gap: 1rem;
+
+            &__image {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    border-radius: 50%;
+                    width: 125px;
+                }
+            }
+
+            &__description {
+                &__title {
+                    font-size: 24px;
+                    color: $text-color-firth;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &__navigation {
+            &__list {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                &__link {
+                    font-size: 14px;
+                    &:hover {
+                        color: $text-color-firth;
+                        cursor: pointer;
+                    }
+                    &__social {
+                        color: $text-color-firth;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
