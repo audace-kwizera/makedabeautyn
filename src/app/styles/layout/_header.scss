@@ -8,6 +8,7 @@
         height: 10vh;
         align-items: center;
         justify-content: space-around;
+        display: flex;
 
         &__logo {
             height: 3rem;
@@ -15,11 +16,15 @@
             gap: 0.1rem;
 
             &__image {
-                height: 2.5rem;
                 justify-items: center;
+                height: 40px;
+                width: auto;
+                display: flex;
+                align-self: center;
+                justify-content: center;
 
                 img {
-                    height: 100%;
+                    height: 40px;
                     border-radius: 50px;
                     width: auto;
                 }
@@ -30,6 +35,10 @@
                     font-size: 10px;
                     text-align: center;
                     color: $text-color-firth;
+                    align-content: center;
+                    align-content: baseline;
+                    font-weight: 500;
+                    letter-spacing: 0.02rem;
                 }
             }
         }

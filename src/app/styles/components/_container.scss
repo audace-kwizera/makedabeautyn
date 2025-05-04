@@ -19,6 +19,9 @@
 
             h1 {
                 font-size: 7em;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 10px;
             }
 
             p {
@@ -98,6 +101,12 @@
     .container {
         &__homecover {
             &__content {
+                h1 {
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    letter-spacing: 10px;
+                    text-align: center;
+                }
                 &__logo {
                     grid-template-columns: 1fr 1fr;
                     padding: 0 5rem;

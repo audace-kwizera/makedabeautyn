@@ -7,13 +7,31 @@
     &__homecover {
         &__button {
             align-self: center;
-            padding: 2rem;
+            padding: 2rem 2rem 0 2rem;
+            display: flex;
+            justify-content: center;
+
             &__primary {
                 letter-spacing: 0.05rem;
                 font-size: 1rem;
                 font-weight: 300;
                 background-color: $background-color-nine;
-                padding: 2rem 1.5rem;
+                padding: 1rem 2rem;
+                color: $text-color-six;
+                border: 0px #EDE3DF;
+
+                &__header {
+                    padding: 0.5rem;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    border: 1px;
+                    border-color: #EDE3DF;
+
+                    a {
+                        color: #f2F2F2;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }

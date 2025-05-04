@@ -35,8 +35,25 @@
     }
 }  */
 /*================================================= sidebar ================================================*/
-/*========================== components ==============================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+}
+
+/*========================== components ==============================*/
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/
 /*================================================ Navbar ===============================================*/
@@ -72,28 +89,31 @@
     }
 }  */
 /*================================================= sidebar ================================================*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .container__homecover__button {
   align-self: center;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  justify-content: center;
 }
 .container__homecover__button__primary {
   letter-spacing: 0.05rem;
   font-size: 1rem;
   font-weight: 300;
   background-color: #C29C65;
-  padding: 2rem 1.5rem;
+  padding: 1rem 2rem;
+  color: #f2F2F2;
+  border: 0px #EDE3DF;
+}
+.container__homecover__button__primary__header {
+  padding: 0.5rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px;
+  border-color: #EDE3DF;
+}
+.container__homecover__button__primary__header a {
+  color: #f2F2F2;
+  text-decoration: none;
 }
 
 /*============================================== Background =============================================*/
@@ -136,7 +156,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  height: 90vh;
+  height: 88vh;
   min-width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -192,6 +212,9 @@
 }
 .container__homecover__content h1 {
   font-size: 7em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 10px;
 }
 .container__homecover__content p {
   font-size: 20px;
@@ -230,6 +253,12 @@
   }
 }
 @media only screen and (max-width: 839px) {
+  .container__homecover__content h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+  }
   .container__homecover__content__logo {
     grid-template-columns: 1fr 1fr;
     padding: 0 5rem;
@@ -291,6 +320,10 @@
     }
 }  */
 /*================================================= sidebar ================================================*/
+ul {
+  list-style-type: none;
+}
+
 /*========================== layout ==============================*/
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/
@@ -332,7 +365,7 @@
   display: grid;
   justify-content: center;
   min-width: 100vw;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 1rem 0;
 }
 .container__footer__logo {
@@ -350,6 +383,8 @@
 .container__footer__logo__description__title {
   font-size: 24px;
   color: #C29C65;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
 }
 .container__footer__logo__description__title:hover {
   cursor: pointer;
@@ -361,17 +396,24 @@
   justify-content: center;
 }
 .container__footer__navigation__list__link {
-  font-size: 14px;
+  font-size: 12px;
 }
 .container__footer__navigation__list__link:hover {
   color: #C29C65;
   cursor: pointer;
 }
 .container__footer__navigation__list__link__social {
+  font-size: 18px;
   color: #C29C65;
 }
 .container__footer__navigation__list__link__social:hover {
   cursor: pointer;
+}
+.container__footer__title h5 {
+  font-size: 0.7rem;
+  color: #38292C;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
 }
 
 /*============================================== Background =============================================*/
@@ -413,6 +455,7 @@
   height: 10vh;
   align-items: center;
   justify-content: space-around;
+  display: flex;
 }
 .container__header__logo {
   height: 3rem;
@@ -420,11 +463,15 @@
   gap: 0.1rem;
 }
 .container__header__logo__image {
-  height: 2.5rem;
   justify-items: center;
+  height: 40px;
+  width: auto;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 .container__header__logo__image img {
-  height: 100%;
+  height: 40px;
   border-radius: 50px;
   width: auto;
 }
@@ -432,6 +479,10 @@
   font-size: 10px;
   text-align: center;
   color: #C29C65;
+  align-content: center;
+  align-content: baseline;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
 }
 
 /*============================================== Background =============================================*/
@@ -720,4 +771,5 @@
         display: none;
     }
 }  */
-/*================================================= sidebar ================================================*//*# sourceMappingURL=styles.css.map */
+/*================================================= sidebar ================================================*/
+/*========================== global ==============================*//*# sourceMappingURL=styles.css.map */

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='container container__footer'>
             {/* Titre */}
             <div className='container__footer__title'>
-                <h2>Améliorer votre santé capillaire et mentale</h2>
+                <h5>Améliorer votre santé capillaire et mentale</h5>
             </div>
 
             {/* Logo */}
@@ -21,7 +21,7 @@ const Footer = () => {
 
                 {/* Description */}
                 <div className="container__footer__logo__description">
-                    <h1 className='container__footer__logo__description__title font-bold! text-2xl text-black'>Makeda Beauty</h1>
+                    <h1 className='container__footer__logo__description__title'>Makeda Beauty</h1>
                 </div>
             </div>
 

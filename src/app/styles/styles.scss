@@ -6,6 +6,7 @@
 @import './components/carousel';
 @import './components/container';
 @import './components/form';
+@import './components/list';
 
 /*========================== layout ==============================*/
 @import './layout/footer';
@@ -26,3 +27,8 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/functions';
+
+/*========================== global ==============================*/
+// @import './../globals';
+// @import './../page.module';
+
