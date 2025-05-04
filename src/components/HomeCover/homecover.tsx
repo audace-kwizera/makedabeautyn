@@ -10,7 +10,7 @@ const Homecover = () => {
                 {/* La vidéo */}
                 <video
                     autoPlay
-                    loop='loop'
+                    loop
                     muted
                     className='background__video__cover'
                 >
