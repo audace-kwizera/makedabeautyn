@@ -171,7 +171,7 @@
 /*========================= Big Mobile ==================================*/
 @media only screen and (max-width: 399px) {
   .background__video__cover {
-    height: 62vh;
+    height: 58vh;
   }
 }
 /*========================= Very Small Mobile ==================================*/
