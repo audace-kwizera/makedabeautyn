@@ -467,7 +467,7 @@ ul {
 /*============================= Big Mobile ==============================*/
 @media only screen and (max-width: 669px) {
   .container__footer__navigation__list {
-    gap: 0.5rem;
+    gap: 0.3rem;
   }
 }
 /*============================================== Background =============================================*/
