@@ -43,8 +43,9 @@
         &__navigation {
             &__list {
                 display: flex;
-                gap: 2rem;
                 flex-wrap: wrap;
+                gap: 2rem;
+                padding: 1rem;
                 justify-content: center;
                 &__link {
                     font-size: 12px;
@@ -74,3 +75,29 @@
 
     }
 }
+
+/*============================= Tablet ==============================*/
+@include maxTablet__839 {
+    .container {
+        &__footer {
+            &__navigation {
+                &__list {
+                    gap: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+/*============================= Big Mobile ==============================*/
+@include maxMobile__669 {
+    .container {
+        &__footer {
+            &__navigation {
+                &__list {
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+} 

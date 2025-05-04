@@ -44,3 +44,24 @@
         }
     }
 }
+ 
+/*========================= Big Mobile ==================================*/
+@include maxMobile__669 {
+   .container {
+        &__header {
+            padding: 1rem;
+        }
+    }
+}
+
+/*========================= Small Mobile ==================================*/
+@include maxSmallMobile__399 {
+    .container {
+        &__header {
+            flex-direction: column;
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+

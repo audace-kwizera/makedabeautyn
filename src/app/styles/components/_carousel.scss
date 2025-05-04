@@ -9,10 +9,43 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            z-index: 0;
+            z-index: -1;
             height: 88vh;
             min-width: 100vw;
             object-fit: cover;
+        }
+    }
+}
+
+/*========================= Big Mobile ==================================*/
+@include maxMobile__669 {
+    .background {
+        &__video {
+            &__cover {
+                height: 84vh;
+            }
+        }
+    }
+}
+
+/*========================= Big Mobile ==================================*/
+@include maxSmallMobile__399 {
+    .background {
+        &__video {
+            &__cover {
+                height: 70vh;
+            }
+        }
+    }
+}
+
+/*========================= Very Small Mobile ==================================*/
+@include maxVerySmallMobile__321 {
+    .background {
+        &__video {
+            &__cover {
+                height: 62vh;
+            }
         }
     }
 }

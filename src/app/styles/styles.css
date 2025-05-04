@@ -155,13 +155,31 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
   height: 88vh;
   min-width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+/*========================= Big Mobile ==================================*/
+@media only screen and (max-width: 669px) {
+  .background__video__cover {
+    height: 84vh;
+  }
+}
+/*========================= Big Mobile ==================================*/
+@media only screen and (max-width: 399px) {
+  .background__video__cover {
+    height: 70vh;
+  }
+}
+/*========================= Very Small Mobile ==================================*/
+@media only screen and (max-width: 320px) {
+  .background__video__cover {
+    height: 62vh;
+  }
+}
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/
 /*================================================ Navbar ===============================================*/
@@ -391,8 +409,9 @@ ul {
 }
 .container__footer__navigation__list {
   display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
   justify-content: center;
 }
 .container__footer__navigation__list__link {
@@ -416,6 +435,18 @@ ul {
   letter-spacing: 0.04rem;
 }
 
+/*============================= Tablet ==============================*/
+@media only screen and (max-width: 839px) {
+  .container__footer__navigation__list {
+    gap: 0.5rem 1rem;
+  }
+}
+/*============================= Big Mobile ==============================*/
+@media only screen and (max-width: 669px) {
+  .container__footer__navigation__list {
+    gap: 0.5rem;
+  }
+}
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/
 /*================================================ Navbar ===============================================*/
@@ -485,6 +516,19 @@ ul {
   letter-spacing: 0.02rem;
 }
 
+/*========================= Big Mobile ==================================*/
+@media only screen and (max-width: 669px) {
+  .container__header {
+    padding: 1rem;
+  }
+}
+/*========================= Small Mobile ==================================*/
+@media only screen and (max-width: 399px) {
+  .container__header {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+}
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/
 /*================================================ Navbar ===============================================*/
