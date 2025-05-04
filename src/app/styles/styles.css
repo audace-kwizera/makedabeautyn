@@ -156,7 +156,7 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  height: 88vh;
+  height: 90vh;
   min-width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -171,13 +171,13 @@
 /*========================= Big Mobile ==================================*/
 @media only screen and (max-width: 399px) {
   .background__video__cover {
-    height: 70vh;
+    height: 62vh;
   }
 }
 /*========================= Very Small Mobile ==================================*/
 @media only screen and (max-width: 320px) {
   .background__video__cover {
-    height: 62vh;
+    height: 55vh;
   }
 }
 /*============================================== Background =============================================*/
@@ -216,7 +216,7 @@
 }  */
 /*================================================= sidebar ================================================*/
 .container__homecover {
-  width: 100vw;
+  width: 100%;
   height: 70vh;
   background-color: rgba(0, 0, 0, 0);
   display: flex;
@@ -266,6 +266,9 @@
   }
 }
 @media only screen and (max-width: 1439px) {
+  .container__homecover__content__logo {
+    padding: 0 5rem;
+  }
   .container__homecover__content__logo__container {
     padding: 5rem 1rem 2rem;
   }
@@ -282,25 +285,46 @@
     padding: 0 5rem;
   }
   .container__homecover__content__logo__container {
-    padding: 4rem 1rem 0rem;
+    padding: 4rem 1rem 1rem;
   }
 }
 @media only screen and (max-width: 669px) {
   .container__homecover__content__logo {
-    padding: 2rem 4rem 2rem;
+    padding: 2rem 0;
+  }
+  .container__homecover__content__logo__container {
+    padding: 3rem 1rem 0;
+  }
+  .container__homecover__content h1 {
+    font-size: 5rem;
+  }
+  .container__homecover__content p {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 399px) {
+  .container__homecover {
+    height: 60vh;
+  }
   .container__homecover__content h1 {
     font-size: 4rem;
   }
   .container__homecover__content__logo {
-    padding: 2rem 2rem 2rem;
+    padding: 2rem 0;
+  }
+  .container__homecover__content__logo__container {
+    padding: 0rem 1rem 0;
   }
 }
 @media only screen and (max-width: 320px) {
   .container__homecover__content__logo {
     grid-template-columns: 1fr;
+  }
+  .container__homecover__content h1 {
+    font-size: 3rem;
+  }
+  .container__homecover__content p {
+    font-size: 12px;
   }
 }
 /*============================================== Background =============================================*/
@@ -382,7 +406,6 @@ ul {
   text-align: center;
   display: grid;
   justify-content: center;
-  min-width: 100vw;
   gap: 1.5rem;
   padding: 1rem 0;
 }
@@ -527,6 +550,7 @@ ul {
   .container__header {
     flex-direction: column;
     padding: 1rem 2rem;
+    height: 30vh;
   }
 }
 /*============================================== Background =============================================*/
