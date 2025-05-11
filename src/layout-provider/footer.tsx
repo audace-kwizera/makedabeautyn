@@ -3,6 +3,7 @@ import { FaInstagram } from "react-icons/fa"
 import { FaFacebookSquare } from "react-icons/fa"
 import { FaTiktok } from "react-icons/fa"
 import { FaWhatsapp } from "react-icons/fa"
+import Link from 'next/link';
 
 const Footer = () => {
     return (
@@ -12,18 +13,20 @@ const Footer = () => {
                 <h5>Améliorer votre santé capillaire et mentale</h5>
             </div>
 
-            {/* Logo */}
-            <div className='container__footer__logo'>
-                {/* Image */}
-                <div className="container__footer__logo__image">
-                    <img src="https://res.cloudinary.com/dahc6jmn4/image/upload/v1708113924/logo_3_yz8ygv.png" alt="Logo Makeda Beauty" />
-                </div>
+            <Link href="/">
+                {/* Logo */}
+                <div className='container__footer__logo'>
+                    {/* Image */}
+                    <div className="container__footer__logo__image">
+                        <img src="https://res.cloudinary.com/dahc6jmn4/image/upload/v1708113924/logo_3_yz8ygv.png" alt="Logo Makeda Beauty" />
+                    </div>
 
-                {/* Description */}
-                <div className="container__footer__logo__description">
-                    <h1 className='container__footer__logo__description__title'>Makeda Beauty</h1>
+                    {/* Description */}
+                    <div className="container__footer__logo__description">
+                        <h1 className='container__footer__logo__description__title'>Makeda Beauty</h1>
+                    </div>
                 </div>
-            </div>
+            </Link>
 
             {/* Pages Link */}
             <div>
@@ -31,11 +34,11 @@ const Footer = () => {
                     <ul className="container__footer__navigation__list">
                         {/* Accueil */}
                         <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Accueil
-                            </span>
-                            {/* </Link> */}
+                            <Link href="/">
+                                <span className="container__footer__navigation__list__link">
+                                    Accueil
+                                </span>
+                            </Link>
                         </li>
                         {/* Head Spa */}
                         <li>
@@ -87,19 +90,19 @@ const Footer = () => {
                         </li>
                         {/* Contact */}
                         <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Contact
-                            </span>
-                            {/* </Link> */}
+                            <Link href="/contact">
+                                <span className="container__footer__navigation__list__link">
+                                    Contact
+                                </span>
+                            </Link>
                         </li>
                         {/* A PROPOS & CGV */}
                         <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                A Propos & CGV
-                            </span>
-                            {/* </Link> */}
+                            <Link href="/cgv">
+                                <span className="container__footer__navigation__list__link">
+                                    A Propos & CGV
+                                </span>
+                            </Link>
                         </li>
                     </ul>
                 </div>

@@ -20,6 +20,8 @@ import toast from 'react-hot-toast';
 import { loginUser } from '@/actions/users';
 import Cookies from "js-cookie";
 import { useRouter } from 'next/navigation';
+import Headernav from '@/layout-provider/header-nav';
+import Footer from '@/layout-provider/footer';
 
 const LoginPage = () => {
     const [loading, setLoading] = React.useState(false);
@@ -59,27 +61,38 @@ const LoginPage = () => {
     }
 
     return (
-        <div className='auth-bg'>
-            <div className='bg-white p-5 rounded-sm w-[500px]'>
+        <div>
 
+            {/* Header */}
+            <Headernav></Headernav>
+
+            <div>
+                {/* Corps */}
+                <div className='container__body__link'></div>
                 {/* Titre */}
-                <h1 className='text-xl font-bold! text-gray-600'>
+                <h1 className='form__title__login'>
                     Se connecter
                 </h1>
 
-                <hr className='my-7 border-t border-gray-300' />
+                <hr />
 
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                    <form
+                        onSubmit={form.handleSubmit(onSubmit)}
+                        className='container__form container__form__login container'>
                         {/* Email */}
                         <FormField
                             control={form.control}
                             name="email"
                             render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Email</FormLabel>
+                                <FormItem
+                                    className='container__form__input container__form__input__login container'>
+                                    <FormLabel
+                                        className='form__input__label form__input__label__login container'>Email</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Entrez votre adresse mail" {...field} />
+                                        <Input
+                                            className='form__input__field form__input__field__login container'
+                                            placeholder="Entrez votre adresse mail" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -91,10 +104,18 @@ const LoginPage = () => {
                             control={form.control}
                             name="password"
                             render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Mot de passe</FormLabel>
+                                <FormItem
+                                    className='container__form__input container__form__input__login container'
+                                >
+                                    <FormLabel
+                                        className='form__input__label form__input__label__login container'
+                                    >Mot de passe</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Entrez votre mot de passe" type='password' {...field} />
+                                        <Input
+                                            className='form__input__field form__input__field__login container'
+                                            placeholder="Entrez votre mot de passe"
+                                            type='password' {...field}
+                                        />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -106,27 +127,36 @@ const LoginPage = () => {
                             control={form.control}
                             name="role"
                             render={({ field }) => (
-                                <FormItem className="space-y-3">
-                                    <FormLabel>Je suis</FormLabel>
-                                    <FormControl>
+                                <FormItem
+                                    className='container__form__input container__form__input__login container'
+                                >
+                                    <FormLabel
+                                    >Je suis</FormLabel>
+                                    <FormControl
+
+                                    >
                                         <RadioGroup
+                                            className='container__form__input__radio container__form__input__radio__login container'
                                             onValueChange={field.onChange}
                                             defaultValue={field.value}
-                                            className="flex space-x-20"
                                         >
-                                            <FormItem className="flex items-center space-x-3 space-y-0">
+                                            <FormItem
+                                                className='form__input__radio form__input__radio__login container'
+                                            >
                                                 <FormControl>
                                                     <RadioGroupItem value="user" />
                                                 </FormControl>
-                                                <FormLabel className="font-normal">
+                                                <FormLabel>
                                                     Client
                                                 </FormLabel>
                                             </FormItem>
-                                            <FormItem className="flex items-center space-x-3 space-y-0">
+                                            <FormItem
+                                                className='form__input__radio form__input__radio__login container'
+                                            >
                                                 <FormControl>
                                                     <RadioGroupItem value="salon-spa-owner" />
                                                 </FormControl>
-                                                <FormLabel className="font-normal">
+                                                <FormLabel>
                                                     Prestataire
                                                 </FormLabel>
                                             </FormItem>
@@ -138,16 +168,27 @@ const LoginPage = () => {
                         />
 
                         {/* Validation compte */}
-                        <div className='flex justify-between items-center'>
-                            <div className='flex gap-5 text-sm'>
-                                Je n'ai pas encore de compte 
-                                <Link href="/register" className='underline'>S'enregistrer</Link>
+                        <div className='container__form__link'>
+                            <div className='form__link__register'>
+                                Je n'ai pas encore de compte
+                                <Link href="/register" className='form__link__register__submit'>S'enregistrer</Link>
                             </div>
-                            <Button disabled={loading} type="submit">Submit</Button>
+                            <div className='container__homecover__button'>
+                                <Button
+                                    disabled={loading}
+                                    type="submit"
+                                    className='container__homecover__button__primary'
+                                >
+                                    Submit
+                                </Button>
+                            </div>
                         </div>
                     </form>
                 </Form>
             </div>
+
+            {/* Footer */}
+            <Footer />
         </div>
     )
 }
