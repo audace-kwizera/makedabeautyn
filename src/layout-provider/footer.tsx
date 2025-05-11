@@ -42,11 +42,11 @@ const Footer = () => {
                         </li>
                         {/* Head Spa */}
                         <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Head Spa
-                            </span>
-                            {/* </Link> */}
+                            <Link href="/headspa">
+                                <span className="container__footer__navigation__list__link">
+                                    Head Spa
+                                </span>
+                            </Link>
                         </li>
                         {/* Hairneedling */}
                         <li>

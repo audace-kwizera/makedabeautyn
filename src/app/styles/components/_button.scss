@@ -11,6 +11,12 @@
             display: flex;
             justify-content: center;
 
+            &__headspa {
+                &__card {
+                    padding: 1rem;
+                }
+            }
+
             &__primary {
                 letter-spacing: 0.05rem;
                 font-size: 1rem;
@@ -30,6 +36,12 @@
                     a {
                         color: #f2F2F2;
                         text-decoration: none;
+                    }
+                }
+
+                &__headspa {
+                    &__card {
+                        padding: 0.5rem;
                     }
                 }
             }
