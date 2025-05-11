@@ -7,7 +7,7 @@ const Header = () => {
   const { user } = usersGlobalStore() as IUsersGlobalStore;
   const [openMenuItems, setOpenMenuItems] = React.useState(false);
   return (
-    <div className='bg-primary p-5 text-white flex justify-between items-center'>
+    <div className='body__menu'>
         {/* Titre */}
         <h1 className='font-bold! text-white text-2xl'>MAKEDA BEAUTY</h1>
 

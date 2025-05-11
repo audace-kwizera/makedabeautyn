@@ -434,6 +434,30 @@ ul {
   list-style-type: none;
 }
 
+.container__menu {
+  display: grid;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.menu__slide {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  align-items: center;
+}
+.menu__slide__title {
+  display: flex;
+  gap: 1rem;
+  font-size: 16px;
+  align-items: center;
+}
+.menu__slide__icon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 /*========================== layout ==============================*/
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/

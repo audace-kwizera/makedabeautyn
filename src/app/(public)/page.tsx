@@ -16,7 +16,7 @@ const Homepage = () => {
       {/* Corps */}
       <div className='container__body'>
         <div>
-          <div >
+          <div>
 
             <Homecover></Homecover>
 

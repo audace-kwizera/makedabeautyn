@@ -5,11 +5,15 @@ import { getCurrentUser } from '@/actions/users';
 import { Loader } from 'lucide-react';
 import ErrorMessage from '@/components/ui/error-message';
 import usersGlobalStore, { IUsersGlobalStore } from '@/store/users-global-store';
+import Footer from './footer';
+import toast from 'react-hot-toast';
+import { useRouter } from 'next/navigation';
 
 const PrivateLayout = ({ children }: { children: React.ReactNode }) => {
   const { user, setUser } = usersGlobalStore() as IUsersGlobalStore;
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
+  const router = useRouter();
   const fetchUser = async () => {
     try {
       setLoading(true);
@@ -21,6 +25,9 @@ const PrivateLayout = ({ children }: { children: React.ReactNode }) => {
         setError(response.message);
       }
     } catch (error: any) {
+      Cookies.remove("token");
+      toast.error(error.message);
+      router.push("/login");
       setError(error.message);
     } finally {
       setLoading(false);
@@ -33,22 +40,23 @@ const PrivateLayout = ({ children }: { children: React.ReactNode }) => {
 
   if (loading) {
     return (
-      <div className='flex items-center justify-center h-screen'>
+      <div>
         <Loader />
       </div>
     );
   }
 
-if (error) {
-  return <div><ErrorMessage error={error} /></div>;
-}
+  if (error) {
+    return <div><ErrorMessage error={error} /></div>;
+  }
 
-return (
-  <div>
-    <Header />
-    <div className="p-5">{children}</div>
-  </div>
-)
+  return (
+    <div>
+      <Header />
+        <div>{children}</div>
+    
+    </div>
+  )
 }
 
 export default PrivateLayout

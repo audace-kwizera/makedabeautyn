@@ -1,0 +1,30 @@
+.container {
+    &__menu {
+        display: grid;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+}
+
+.menu {
+    &__slide {
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+        align-items: center;
+
+        &__title {
+            display: flex;
+            gap: 1rem;
+            font-size: 16px;
+            align-items: center;
+        }
+
+        &__icon {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+    }
+}
+
