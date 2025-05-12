@@ -36,68 +36,68 @@ const Headernav = () => {
                             {/* Head Spa */}
                             <li>
                                 <Link href="/headspa">
+                                    <span className="container__footer__navigation__list__link">
+                                        Head Spa
+                                    </span>
+                                </Link>
+                            </li>
+                            {/* Hairneedling */}
+                            <li>
+                                <Link href="/hairneedling">
+                                    <span className="container__footer__navigation__list__link">
+                                        Hairneedling
+                                    </span>
+                                </Link>
+                            </li>
+                            {/* Braids */}
+                            <li>
+                                {/* <Link to="/"> */}
                                 <span className="container__footer__navigation__list__link">
-                                    Head Spa
+                                    Braids
                                 </span>
-                            </Link>
-                        </li>
-                        {/* Hairneedling */}
-                        <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Hairneedling
-                            </span>
-                            {/* </Link> */}
-                        </li>
-                        {/* Braids */}
-                        <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Braids
-                            </span>
-                            {/* </Link> */}
-                        </li>
-                        {/* Shop */}
-                        <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Shop
-                            </span>
-                            {/* </Link> */}
-                        </li>
-                        {/* Contact */}
-                        <li>
-                            <Link href="/contact">
+                                {/* </Link> */}
+                            </li>
+                            {/* Shop */}
+                            <li>
+                                {/* <Link to="/"> */}
                                 <span className="container__footer__navigation__list__link">
-                                    Contact
+                                    Shop
                                 </span>
-                            </Link>
-                        </li>
-                        {/* Carte Cadeaux */}
-                        <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Carte Cadeaux
-                            </span>
-                            {/* </Link> */}
-                        </li>
-                        {/* Panier */}
-                        <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Panier
-                            </span>
-                            {/* </Link> */}
-                        </li>
-                    </ul>
+                                {/* </Link> */}
+                            </li>
+                            {/* Contact */}
+                            <li>
+                                <Link href="/contact">
+                                    <span className="container__footer__navigation__list__link">
+                                        Contact
+                                    </span>
+                                </Link>
+                            </li>
+                            {/* Carte Cadeaux */}
+                            <li>
+                                {/* <Link to="/"> */}
+                                <span className="container__footer__navigation__list__link">
+                                    Carte Cadeaux
+                                </span>
+                                {/* </Link> */}
+                            </li>
+                            {/* Panier */}
+                            <li>
+                                {/* <Link to="/"> */}
+                                <span className="container__footer__navigation__list__link">
+                                    Panier
+                                </span>
+                                {/* </Link> */}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            {/* Login Button */}
-            <Button className='container__homecover__button__primary__header container__homecover__button__primary'>
-                <Link href="/login">Se connecter</Link>
-            </Button>
-        </div>
+                {/* Login Button */}
+                <Button className='container__homecover__button__primary__header container__homecover__button__primary'>
+                    <Link href="/login">Se connecter</Link>
+                </Button>
+            </div>
         </div >
     )
 }

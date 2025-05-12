@@ -9,7 +9,7 @@ const HeadSpaBody = () => {
                 {/* Title */}
                 <div className="container__policy__header">
                     <span className="container__policy__header container__policy__header__title__body">
-                        HEAD SPA
+                        NOS FORMULES
                     </span>
                 </div>
 

@@ -50,11 +50,11 @@ const Footer = () => {
                         </li>
                         {/* Hairneedling */}
                         <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Hairneedling
-                            </span>
-                            {/* </Link> */}
+                            <Link href="/hairneedling">
+                                <span className="container__footer__navigation__list__link">
+                                    Hairneedling
+                                </span>
+                            </Link>
                         </li>
                         {/* Braids */}
                         <li>
