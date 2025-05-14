@@ -510,12 +510,18 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0 2rem;
 }
+.container__card__hairneedling {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 1rem;
+  padding: 0 2rem;
+}
 .container__body__card {
   display: grid;
   gap: 2rem;
 }
 .container__headspa {
-  padding: 2rem 0;
+  padding: 2rem 10rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -534,6 +540,39 @@ ul {
 }
 .body__card__side {
   height: 80%;
+}
+.body__card__side__hairneedling {
+  height: 100%;
+}
+.body__card__side__hairneedling__card {
+  grid-row: 1;
+  z-index: 1;
+}
+.body__card__side__background {
+  padding: 10vw 0 0 25vw;
+  width: 60vw;
+  position: absolute;
+  align-content: flex-end;
+  grid-row: 2;
+  height: 100%;
+  background: transparent;
+}
+.body__card__hairneedling__description__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.body__card__hairneedling__title {
+  display: grid;
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
+.body__card__hairneedling__title__name {
+  font-size: 1.2rem;
+  text-align: start;
+}
+.body__card__hairneedling__image {
+  height: auto;
+  width: 100%;
 }
 .body__card li {
   list-style: initial;

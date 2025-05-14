@@ -17,7 +17,7 @@ const HairneedlingBody = () => {
                 {/* Body */}
                 <div className='container__card__hairneedling'>
                     {/* Card 1 */}
-                    <div className='container__body__card__hairneedling body__card__side body__card'>
+                    <div className='body__card__side__hairneedling__card body__card__side__hairneedling container__body__card__hairneedling body__card__side body__card'>
                         {/* Photo */}
                         <div>
                             <img
@@ -27,11 +27,12 @@ const HairneedlingBody = () => {
                             />
                         </div>
                         {/* Title */}
-                        <div className='body__card__headspa__title'>
-                            <span className='body__card__headspa__title__name'>HAIRNEEDLING
-                                PRESTATIONS</span>
+                        <div className='body__card__hairneedling__title'>
+                            <span className='body__card__hairneedling__title__name'>HAIRNEEDLING</span>
+                            <span className='body__card__hairneedling__title__name'>PRESTATIONS</span>
                         </div>
                         {/* Prestation */}
+                        {/* 1 seance 1 zone */}
                         <div>
                             <div className='body__card__hairneedling__description__container'>
                                 {/* Titre */}
@@ -45,7 +46,66 @@ const HairneedlingBody = () => {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Prestation */}
+                        {/* 1 seance 2 zones */}
+                        <div>
+                            <div className='body__card__hairneedling__description__container'>
+                                {/* Titre */}
+                                <span className='body__card__headspa__description'>1 séance 2 zone</span>
+                                {/* Prix */}
+                                <span className='body__card__headspa__description'>140 €</span>
+                                {/* Bouton */}
+                                {/* Section Bouton */}
+                                <div className='container__homecover__button__headspa__card container__homecover__button'>
+                                    <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Prestation */}
+                        {/* 4 seance */}
+                        <div>
+                            <div className='body__card__hairneedling__description__container'>
+                                {/* Titre */}
+                                <span className='body__card__headspa__description'>4 séance</span>
+                                {/* Prix */}
+                                <span className='body__card__headspa__description'>230 €</span>
+                                {/* Bouton */}
+                                {/* Section Bouton */}
+                                <div className='container__homecover__button__headspa__card container__homecover__button'>
+                                    <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
+                                </div>
+                            </div>
+                        </div>
                         
+                        {/* Prestation */}
+                        {/* 6 séances */}
+                        <div>
+                            <div className='body__card__hairneedling__description__container'>
+                                {/* Titre */}
+                                <span className='body__card__headspa__description'>6 séances</span>
+                                {/* Prix */}
+                                <span className='body__card__headspa__description'>370 €</span>
+                                {/* Bouton */}
+                                {/* Section Bouton */}
+                                <div className='container__homecover__button__headspa__card container__homecover__button'>
+                                    <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Image */}
+                    <div className='body__card__side__background container__body__card__hairneedling body__card__side body__card'>
+                        {/* Photo */}
+                        <div>
+                            <img
+                                src="https://res.cloudinary.com/dahc6jmn4/image/upload/v1734211493/otpoakzn6mojerw5gzta.jpg"
+                                alt="Hairneedling Image"
+                                className='body__card__hairneedling__image body__card__headspa__image'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

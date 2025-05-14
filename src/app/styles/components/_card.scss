@@ -27,7 +27,7 @@
     }
 
     &__headspa {
-        padding: 2rem 0;
+        padding: 2rem 10rem;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -49,6 +49,25 @@
 
         &__side {
             height: 80%;
+
+            &__hairneedling {
+                height: 100%;
+
+                &__card {
+                    grid-row: 1;
+                    z-index: 1;
+                }
+            }
+
+            &__background {
+                padding: 10vw 0 0 25vw;
+                width: 60vw;
+                position: absolute;
+                align-content: flex-end;
+                grid-row: 2;
+                height: 100%;
+                background: transparent;
+            }
         }
 
         &__hairneedling {
@@ -57,6 +76,22 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                 }
+            }
+
+            &__title {
+                display: grid;
+                gap: 0.5rem;
+                padding: 2rem 0;
+
+                &__name {
+                    font-size: 1.2rem;
+                    text-align: start;
+                }
+            }
+
+            &__image {
+                height: auto;
+                width: 100%;
             }
         }
 
