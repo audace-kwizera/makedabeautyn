@@ -722,6 +722,24 @@ ul {
   .container__headspa {
     padding: 2rem 5rem;
   }
+  .container__card__hairneedling {
+    gap: 0;
+  }
+  .container__card__side__background__image {
+    width: 100%;
+  }
+  .container__hairneedling__body {
+    padding: 2rem 0;
+  }
+  .body__card__side__background__image {
+    position: relative;
+  }
+  .body__card__side__background__image img {
+    width: 100%;
+  }
+  .body__card__side__hairneedling__card__width {
+    width: auto;
+  }
 }
 /*========================= Big Smartphone ==================================*/
 @media only screen and (max-width: 669px) {
@@ -733,6 +751,27 @@ ul {
 @media only screen and (max-width: 399px) {
   .container__card {
     padding: 0;
+  }
+  .container__policy__header__hairneedling {
+    padding: 0;
+  }
+  .container__homecover__button__hairneedling {
+    padding: 0;
+  }
+  .container__homecover__button__primary__hairneedling__card {
+    padding: 0.4rem;
+  }
+  .body__card__side__hairneedling__card__width {
+    padding: 0.1rem;
+  }
+  .body__card__hairneedling__description {
+    font-size: 0.6rem;
+  }
+  .body__card__hairneedling__description span {
+    padding: 20px;
+  }
+  .body__card__hairneedling__description__container {
+    display: flow;
   }
 }
 /*========================== layout ==============================*/

@@ -82,7 +82,7 @@
                 padding: 3rem 0;
 
                 &__braids {
-                    padding: 5rem 0!important;
+                    padding: 5rem 0 !important;
                 }
             }
         }
@@ -255,16 +255,19 @@
             gap: 5rem;
         }
     }
+
     .body {
         &__card {
             &__headspa {
                 &__image {
                     height: 50vh;
+
                     &__center {
                         height: 50vh;
                     }
                 }
             }
+
             &__side {
                 height: 100%;
             }
@@ -278,6 +281,50 @@
     .container {
         &__headspa {
             padding: 2rem 5rem;
+        }
+
+        &__card {
+            &__hairneedling {
+                gap: 0;
+            }
+
+            &__side {
+                &__background {
+                    &__image {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &__hairneedling {
+            &__body {
+                padding: 2rem 0;
+            }
+        }
+    }
+
+    .body {
+        &__card {
+            &__side {
+                &__background {
+                    &__image {
+                        position: relative;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &__hairneedling {
+                    &__card {
+                        &__width {
+                            width: auto;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -297,6 +344,59 @@
     .container {
         &__card {
             padding: 0;
+        }
+
+        &__policy {
+            &__header {
+                &__hairneedling {
+                    padding: 0;
+                }
+            }
+        }
+        &__homecover {
+            &__button {
+                &__hairneedling {
+                    padding: 0;
+                }
+                &__primary {
+                    &__hairneedling {
+                        &__card {
+                            padding: 0.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .body {
+        &__card {
+            &__side {
+                &__hairneedling {
+                    &__card {
+                        &__width {
+                            padding: 0.1rem;
+                        }
+                    }
+                }
+
+            }
+
+            &__hairneedling {
+                &__description {
+                    font-size: 0.6rem;
+
+                    span {
+                        padding: 20px;
+                    }
+
+                    &__container {
+                        display: flow;
+                    }
+                }
+
+
+            }
         }
     }
 }

@@ -36,9 +36,9 @@ const HairneedlingBody = () => {
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description'>1 séance 1 zone</span>
+                                <span className='body__card__hairneedling__description'>1 séance 1 zone  </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description'>70 €</span>
+                                <span className='body__card__hairneedling__description'> 70 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -52,9 +52,9 @@ const HairneedlingBody = () => {
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description'>1 séance 2 zone</span>
+                                <span className='body__card__hairneedling__description'>1 séance 2 zone  </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description'>140 €</span>
+                                <span className='body__card__hairneedling__description'> 140 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -68,9 +68,9 @@ const HairneedlingBody = () => {
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description'>4 séance</span>
+                                <span className='body__card__hairneedling__description'>4 séance  </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description'>230 €</span>
+                                <span className='body__card__hairneedling__description'> 230 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -84,9 +84,9 @@ const HairneedlingBody = () => {
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description'>6 séances</span>
+                                <span className='body__card__hairneedling__description'>6 séances  </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description'>370 €</span>
+                                <span className='body__card__hairneedling__description'> 370 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
