@@ -7,21 +7,21 @@ const Contactbody = () => {
 
       {/* Title */}
       <div className='container__contact__header'>
-        <span className='container__contact__header container__contact__header__title'>CONTACT</span>
-        <span className='container__contact__header container__contact__header__description'>N'hésitez pas à nous contacter pour plus d'informations, ou envoyer nous un message en remplissant ce formulaire</span>
+        <span className='container__contact__header__title__contact container__contact__header container__contact__header__title'>CONTACT</span>
+        <span className='container__contact__header__description__contact container__contact__header container__contact__header__description'>N'hésitez pas à nous contacter pour plus d'informations, ou envoyer nous un message en remplissant ce formulaire</span>
       </div>
 
       {/* Informations */}
       <div className='container__body container__body__contact container__body__contact__text'>
         <div className='body__contact__text body__contact__text__color'>
           {/* Addresse */}
-          <span>addresse</span>
-          <span>Ville, postal code, France</span>
+          <span>4 bis Rue du Rhin</span>
+          <span>Bischwiller, 67240, France</span>
         </div>
 
         <div className='body__contact__text'>
           {/* Mail */}
-          <span>Addresse Mail</span>
+          <span>contact@makedabeauty.com</span>
         </div>
 
         <div className='body__contact__text body__contact__text__color'>

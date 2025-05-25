@@ -10,6 +10,10 @@
         justify-content: space-around;
         display: flex;
 
+        &__border {
+            border-bottom: solid 0.5px $background-color-nine;
+        }
+
         &__logo {
             height: 3rem;
             display: grid;

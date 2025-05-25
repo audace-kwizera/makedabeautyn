@@ -24,6 +24,11 @@
                 text-align: center;
                 font-family: 'Cormorant Garamond', Georgia, "Times New Roman", serif;
                 font-weight: 300;
+
+                &__contact {
+                    font-size: 3rem;
+                    letter-spacing: 0.5rem;
+                }
             }
 
             &__description {
@@ -31,6 +36,12 @@
                 font-size: 0.75rem;
                 font-family: 'Cormorant Garamond', Georgia, "Times New Roman", serif;
                 font-weight: 200;
+
+                &__contact {
+                    font-size: 1.3rem;
+                    font-weight: 200;
+
+                }
             }
         }
 
@@ -51,10 +62,12 @@
     &__body {
         &__contact {
             padding: 2rem 6rem;
+
             &__text {
-                display: grid; 
+                display: grid;
                 gap: 1rem;
             }
+
             &__form {
                 &__input {
                     width: 100%;
@@ -101,6 +114,7 @@
             &__input {
                 padding: 0.5rem;
                 width: 90%;
+
                 &__message {
                     width: 95%;
                 }

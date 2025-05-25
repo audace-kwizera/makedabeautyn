@@ -58,11 +58,11 @@ const Footer = () => {
                         </li>
                         {/* Braids */}
                         <li>
-                            {/* <Link to="/"> */}
-                            <span className="container__footer__navigation__list__link">
-                                Braids
-                            </span>
-                            {/* </Link> */}
+                            <Link href="/braids">
+                                <span className="container__footer__navigation__list__link">
+                                    Braids
+                                </span>
+                            </Link>
                         </li>
                         {/* Shop */}
                         <li>

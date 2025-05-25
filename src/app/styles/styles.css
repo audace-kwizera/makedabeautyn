@@ -65,6 +65,10 @@ a {
   color: #38292C;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  flex-wrap: wrap;
+}
+
 /*========================== components ==============================*/
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/
@@ -107,6 +111,9 @@ a {
   display: flex;
   justify-content: center;
 }
+.container__homecover__button__hairneedling {
+  padding: 40vh 0 0 0;
+}
 .container__homecover__button__headspa__card {
   padding: 1rem;
 }
@@ -131,6 +138,9 @@ a {
   text-decoration: none;
 }
 .container__homecover__button__primary__headspa__card {
+  padding: 0.5rem;
+}
+.container__homecover__button__primary__hairneedling__card {
   padding: 0.5rem;
 }
 
@@ -516,6 +526,26 @@ ul {
   gap: 1rem;
   padding: 0 2rem;
 }
+.container__card__side__background__image {
+  width: 95vw;
+  display: grid;
+  height: 110vh;
+  justify-content: end;
+  grid-template-columns: 1fr;
+  align-content: end;
+}
+.container__card__side__background__image img {
+  width: 70%;
+  height: 100%;
+  padding: 0 0 0 0rem;
+  border-radius: 0;
+  justify-self: end;
+}
+.container__card__side__background__image__braids {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
 .container__body__card {
   display: grid;
   gap: 2rem;
@@ -525,6 +555,23 @@ ul {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+.container__hairneedling {
+  padding: 0 0 3rem 0;
+}
+.container__hairneedling__card {
+  display: grid;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.container__hairneedling__body {
+  padding: 2rem 1rem;
+}
+.container__policy__header__hairneedling {
+  padding: 3rem 0;
+}
+.container__policy__header__hairneedling__braids {
+  padding: 5rem 0 !important;
 }
 
 .body__card {
@@ -548,6 +595,12 @@ ul {
   grid-row: 1;
   z-index: 1;
 }
+.body__card__side__hairneedling__card__width {
+  width: 45vw;
+}
+.body__card__side__hairneedling__card__width__braids {
+  width: 60vw;
+}
 .body__card__side__background {
   padding: 10vw 0 0 25vw;
   width: 60vw;
@@ -557,14 +610,31 @@ ul {
   height: 100%;
   background: transparent;
 }
+.body__card__side__background__image {
+  width: 92vw;
+  height: 100vh;
+  padding: 15vw 0 0 0vw;
+  position: absolute;
+}
+.body__card__side__background__image img {
+  height: 120vh;
+  justify-self: end;
+  width: auto;
+}
+.body__card__hairneedling__description {
+  font-size: 0.9rem;
+}
 .body__card__hairneedling__description__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.body__card__hairneedling__description__container__prestation {
+  align-items: center;
+}
 .body__card__hairneedling__title {
   display: grid;
   gap: 0.5rem;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 .body__card__hairneedling__title__name {
   font-size: 1.2rem;
@@ -573,6 +643,20 @@ ul {
 .body__card__hairneedling__image {
   height: auto;
   width: 100%;
+}
+.body__card__hairneedling__image__photo {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.body__card__hairneedling__image__cover {
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  width: 100%;
+}
+.body__card__hairneedling__image img {
+  width: 70%;
 }
 .body__card li {
   list-style: initial;
@@ -617,6 +701,40 @@ ul {
      object-fit: cover;
 }
 
+/*========================= Big Tablet ==================================*/
+@media only screen and (max-width: 1199px) {
+  .container__card {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  .body__card__headspa__image {
+    height: 50vh;
+  }
+  .body__card__headspa__image__center {
+    height: 50vh;
+  }
+  .body__card__side {
+    height: 100%;
+  }
+}
+/*========================= Tablet ==================================*/
+@media only screen and (max-width: 839px) {
+  .container__headspa {
+    padding: 2rem 5rem;
+  }
+}
+/*========================= Big Smartphone ==================================*/
+@media only screen and (max-width: 669px) {
+  .container__headspa {
+    padding: 2rem 2rem;
+  }
+}
+/*========================= Smartphone ==================================*/
+@media only screen and (max-width: 399px) {
+  .container__card {
+    padding: 0;
+  }
+}
 /*========================== layout ==============================*/
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/
@@ -762,6 +880,9 @@ ul {
   align-items: center;
   justify-content: space-around;
   display: flex;
+}
+.container__header__border {
+  border-bottom: solid 0.5px #C29C65;
 }
 .container__header__logo {
   height: 3rem;
@@ -1073,10 +1194,18 @@ ul {
   font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-weight: 300;
 }
+.container__contact__header__title__contact {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
 .container__contact__header__description {
   font-style: italic;
   font-size: 0.75rem;
   font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-weight: 200;
+}
+.container__contact__header__description__contact {
+  font-size: 1.3rem;
   font-weight: 200;
 }
 .container__contact__body__contact {

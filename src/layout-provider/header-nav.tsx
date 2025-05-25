@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 
 const Headernav = () => {
     return (
-        <div>
+        <div className='container__header__border'>
             {/* Header */}
             <div className='container__header'>
                 <Link href="/">
@@ -51,11 +51,11 @@ const Headernav = () => {
                             </li>
                             {/* Braids */}
                             <li>
-                                {/* <Link to="/"> */}
-                                <span className="container__footer__navigation__list__link">
-                                    Braids
-                                </span>
-                                {/* </Link> */}
+                                <Link href="/braids">
+                                    <span className="container__footer__navigation__list__link">
+                                        Braids
+                                    </span>
+                                </Link>
                             </li>
                             {/* Shop */}
                             <li>

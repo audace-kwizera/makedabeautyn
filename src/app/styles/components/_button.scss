@@ -11,6 +11,10 @@
             display: flex;
             justify-content: center;
 
+            &__hairneedling {
+                padding: 40vh 0 0 0;
+            }
+
             &__headspa {
                 &__card {
                     padding: 1rem;
@@ -40,6 +44,12 @@
                 }
 
                 &__headspa {
+                    &__card {
+                        padding: 0.5rem;
+                    }
+                }
+
+                &__hairneedling {
                     &__card {
                         padding: 0.5rem;
                     }

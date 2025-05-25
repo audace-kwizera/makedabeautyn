@@ -1,10 +1,10 @@
-import HairneedlingBody from '@/components/Hairneedling/hairneedling'
+import BraidsBody from '@/components/Braids/braids'
 import { Button } from '@/components/ui/button'
 import Footer from '@/layout-provider/footer'
 import Headernav from '@/layout-provider/header-nav'
 import React from 'react'
 
-const Hairneedling = () => {
+const Braids = () => {
     return (
         <div>
 
@@ -15,7 +15,7 @@ const Hairneedling = () => {
                 <div>
                     <div>
 
-                        <HairneedlingBody></HairneedlingBody>
+                        <BraidsBody></BraidsBody>
 
                         {/* Section Bouton */}
                         <div className='container__homecover__button__hairneedling container__homecover__button'>
@@ -31,4 +31,4 @@ const Hairneedling = () => {
     )
 }
 
-export default Hairneedling
+export default Braids

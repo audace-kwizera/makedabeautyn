@@ -17,6 +17,35 @@
             gap: 1rem;
             padding: 0 2rem;
         }
+
+        &__side {
+            &__background {
+                &__image {
+                    width: 95vw;
+                    display: grid;
+                    height: 110vh;
+                    justify-content: end;
+                    grid-template-columns: 1fr;
+                    align-content: end;
+
+                    img {
+
+                        width: 70%;
+                        height: 100%;
+                        padding: 0 0 0 0rem;
+                        border-radius: 0;
+                        justify-self: end;
+
+                    }
+
+                    &__braids {
+                        object-fit: contain;
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
     }
 
     &__body {
@@ -31,6 +60,32 @@
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+
+    &__hairneedling {
+        padding: 0 0 3rem 0;
+
+        &__card {
+            display: grid;
+            justify-content: space-around;
+            padding: 1rem;
+        }
+
+        &__body {
+            padding: 2rem 1rem;
+        }
+    }
+
+    &__policy {
+        &__header {
+            &__hairneedling {
+                padding: 3rem 0;
+
+                &__braids {
+                    padding: 5rem 0!important;
+                }
+            }
+        }
     }
 }
 
@@ -56,6 +111,14 @@
                 &__card {
                     grid-row: 1;
                     z-index: 1;
+
+                    &__width {
+                        width: 45vw;
+
+                        &__braids {
+                            width: 60vw;
+                        }
+                    }
                 }
             }
 
@@ -67,21 +130,40 @@
                 grid-row: 2;
                 height: 100%;
                 background: transparent;
+
+                &__image {
+                    width: 92vw;
+                    height: 100vh;
+                    padding: 15vw 0 0 0vw;
+                    position: absolute;
+
+                    img {
+                        height: 120vh;
+                        justify-self: end;
+                        width: auto;
+                    }
+                }
             }
         }
 
         &__hairneedling {
             &__description {
+                font-size: 0.9rem;
+
                 &__container {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
+
+                    &__prestation {
+                        align-items: center;
+                    }
                 }
             }
 
             &__title {
                 display: grid;
                 gap: 0.5rem;
-                padding: 2rem 0;
+                padding: 0.5rem 0;
 
                 &__name {
                     font-size: 1.2rem;
@@ -92,6 +174,21 @@
             &__image {
                 height: auto;
                 width: 100%;
+
+                &__photo {
+                    object-fit: contain;
+                }
+
+                &__cover {
+                    height: 45vh;
+                    object-fit: cover;
+                    border-radius: 25px;
+                    width: 100%;
+                }
+
+                img {
+                    width: 70%;
+                }
             }
         }
 
@@ -145,6 +242,61 @@
                     object-fit: cover;
                 }
             }
+        }
+    }
+}
+
+/*========================= Big Tablet ==================================*/
+
+@include maxBigTablet__1199 {
+    .container {
+        &__card {
+            grid-template-columns: 1fr;
+            gap: 5rem;
+        }
+    }
+    .body {
+        &__card {
+            &__headspa {
+                &__image {
+                    height: 50vh;
+                    &__center {
+                        height: 50vh;
+                    }
+                }
+            }
+            &__side {
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+/*========================= Tablet ==================================*/
+@include maxTablet__839 {
+    .container {
+        &__headspa {
+            padding: 2rem 5rem;
+        }
+    }
+}
+
+
+/*========================= Big Smartphone ==================================*/
+@include maxMobile__669 {
+    .container {
+        &__headspa {
+            padding: 2rem 2rem;
+        }
+    }
+}
+
+/*========================= Smartphone ==================================*/
+@include maxSmallMobile__399 {
+    .container {
+        &__card {
+            padding: 0;
         }
     }
 }
