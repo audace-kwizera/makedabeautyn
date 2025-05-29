@@ -113,19 +113,19 @@ const Footer = () => {
                 <ul className='container__footer__navigation__list'>
                     {/* Instagram */}
                     <li>
-                        <span className="container__footer__navigation__list__link__social"><FaInstagram /></span>
+                        <span className="container__footer__navigation__list__link__social"><Link href="https://www.instagram.com/makeda_beautys/"><FaInstagram /></Link></span>
                     </li>
                     {/* Facebook */}
                     <li>
-                        <span className="container__footer__navigation__list__link__social"><FaFacebookSquare /></span>
+                        <span className="container__footer__navigation__list__link__social"><Link href="https://www.facebook.com/Makedabraids/"><FaFacebookSquare /></Link></span>
                     </li>
                     {/* Tik Tok */}
                     <li>
-                        <span className="container__footer__navigation__list__link__social"><FaTiktok /></span>
+                        <span className="container__footer__navigation__list__link__social"><Link href="https://www.tiktok.com/@makeda.beauty"><FaTiktok /></Link></span>
                     </li>
                     {/* WhatsApp */}
                     <li>
-                        <span className="container__footer__navigation__list__link__social"><FaWhatsapp /></span>
+                        <span className="container__footer__navigation__list__link__social"><Link href="https://wa.me/33751586104"><FaWhatsapp /></Link></span>
                     </li>
                 </ul>
             </div>
