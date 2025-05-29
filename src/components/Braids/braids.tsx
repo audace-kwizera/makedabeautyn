@@ -34,9 +34,9 @@ const BraidsBody = () => {
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description'>Nattes collés à partir de </span>
+                                <span className='body__card__hairneedling__description'>Nattes collés à partir de: </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description'>30 €</span>
+                                <span className='body__card__hairneedling__description'> 30 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -50,9 +50,9 @@ const BraidsBody = () => {
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description'>Pose tissage au fil (sans colle)</span>
+                                <span className='body__card__hairneedling__description'>Pose tissage au fil (sans colle): </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description'>40 €</span>
+                                <span className='body__card__hairneedling__description'> 40 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -66,9 +66,9 @@ const BraidsBody = () => {
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description'>Braids(knotless, boho...) à partir de</span>
+                                <span className='body__card__hairneedling__description'>Braids (knotless, boho...) à partir de: </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description'>50 €</span>
+                                <span className='body__card__hairneedling__description'> 50 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -82,9 +82,9 @@ const BraidsBody = () => {
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description'>Vanilles à partir de </span>
+                                <span className='body__card__hairneedling__description'>Vanilles à partir de: </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description'>50 €</span>
+                                <span className='body__card__hairneedling__description'> 50 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -98,9 +98,9 @@ const BraidsBody = () => {
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description'>Crochet vixen à partir de </span>
+                                <span className='body__card__hairneedling__description'>Crochet vixen à partir de: </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description'>70 €</span>
+                                <span className='body__card__hairneedling__description'> 70 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>

@@ -79,3 +79,31 @@
     }
 }
 
+/*========================= Big Smartphone ==================================*/
+@include maxTablet__839 {
+    .container {
+        &__body {
+            &__contact {
+                &__form {
+                    &__information {
+                        &__responsive {
+                            grid-template-columns: 1fr!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .body {
+        &__contact {
+            &__form {
+                &__input {
+                    width: 95%!important;
+                }
+            }
+        }
+    }
+}
+
+
+

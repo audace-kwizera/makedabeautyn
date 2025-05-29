@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import Footer from '@/layout-provider/footer'
 import Headernav from '@/layout-provider/header-nav'
 import React from 'react'
+import Link from 'next/link'
 
 const Braids = () => {
     return (
@@ -19,7 +20,7 @@ const Braids = () => {
 
                         {/* Section Bouton */}
                         <div className='container__homecover__button__hairneedling container__homecover__button'>
-                            <Button className='container__homecover__button__primary'>NOS SERVICES</Button>
+                            <Button className='container__homecover__button__primary'><Link href="https://www.planity.com/makeda-beauty-head-spa-67240-bischwiller">NOS SERVICES</Link></Button>
                         </div>
                     </div>
                 </div>

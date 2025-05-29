@@ -16,7 +16,7 @@ const Contactbody = () => {
         <div className='body__contact__text body__contact__text__color'>
           {/* Addresse */}
           <span>4 bis Rue du Rhin</span>
-          <span>Bischwiller, 67240, France</span>
+          <span>67240 Bischwiller, France</span>
         </div>
 
         <div className='body__contact__text'>
@@ -26,7 +26,7 @@ const Contactbody = () => {
 
         <div className='body__contact__text body__contact__text__color'>
           {/* Telephone */}
-          <span>Numéro</span>
+          <span>07 51 58 61 04</span>
         </div>
 
       </div>
@@ -41,12 +41,12 @@ const Contactbody = () => {
           // onSubmit={handleSubmit}
           >
             {/* Coordoonées */}
-            <div className='container__body__contact__form__information'>
+            <div className='container__body__contact__form__information__responsive container__body__contact__form__information'>
               <div className="container__body__contact__form__input">
                 {/* Votre Name */}
                 {/* <label htmlFor="name">Votre Nom : </label> */}
                 <input
-                  className="body__contact__form__input"
+                  className="container__body__contact__form__input__responsive body__contact__form__input"
                   type="text"
                   name="name"
                   // value={name}
@@ -58,7 +58,7 @@ const Contactbody = () => {
                 {/* Votre Prénom */}
                 {/* <label htmlFor="name">Votre adresse mail : </label> */}
                 <input
-                  className="body__contact__form__input"
+                  className="container__body__contact__form__input__responsive body__contact__form__input"
                   type="text"
                   name="name"
                   // value={name}

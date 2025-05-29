@@ -451,6 +451,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #555555;
 }
 
+/*========================= Big Smartphone ==================================*/
+@media only screen and (max-width: 839px) {
+  .container__body__contact__form__information__responsive {
+    grid-template-columns: 1fr !important;
+  }
+  .body__contact__form__input {
+    width: 95% !important;
+  }
+}
 ul {
   list-style-type: none;
 }
