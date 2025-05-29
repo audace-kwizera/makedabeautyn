@@ -49,9 +49,9 @@ const HeadSpaBody = () => {
                         </div>
                         {/* Bouton */}
                         {/* Section Bouton */}
-                        <div className='container__homecover__button__headspa__card container__homecover__button'>
+                        {/* <div className='container__homecover__button__headspa__card container__homecover__button'>
                             <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Card 2 */}
@@ -88,9 +88,9 @@ const HeadSpaBody = () => {
                         </div>
                         {/* Bouton */}
                         {/* Section Bouton */}
-                        <div className='container__homecover__button__headspa__card container__homecover__button'>
+                        {/* <div className='container__homecover__button__headspa__card container__homecover__button'>
                             <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Card 3 */}
@@ -126,9 +126,9 @@ const HeadSpaBody = () => {
                         </div>
                         {/* Bouton */}
                         {/* Section Bouton */}
-                        <div className='container__homecover__button__headspa__card container__homecover__button'>
+                        {/* <div className='container__homecover__button__headspa__card container__homecover__button'>
                             <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary '>PRENDRE RDV</Button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

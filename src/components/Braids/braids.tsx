@@ -39,9 +39,9 @@ const BraidsBody = () => {
                                 <span className='body__card__hairneedling__description'> 30 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
-                                <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
+                                {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
                                     <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -55,9 +55,9 @@ const BraidsBody = () => {
                                 <span className='body__card__hairneedling__description'> 40 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
-                                <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
+                                {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
                                     <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -71,9 +71,9 @@ const BraidsBody = () => {
                                 <span className='body__card__hairneedling__description'> 50 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
-                                <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
+                                {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
                                     <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -87,9 +87,9 @@ const BraidsBody = () => {
                                 <span className='body__card__hairneedling__description'> 50 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
-                                <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
+                                {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
                                     <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -103,9 +103,9 @@ const BraidsBody = () => {
                                 <span className='body__card__hairneedling__description'> 70 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
-                                <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
+                                {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
                                     <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

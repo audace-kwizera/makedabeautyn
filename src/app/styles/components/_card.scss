@@ -138,9 +138,9 @@
                     position: absolute;
 
                     img {
-                        height: 120vh;
+                        height: 100vh;
                         justify-self: end;
-                        width: auto;
+                        width: 55vw;
                     }
                 }
             }
@@ -152,7 +152,7 @@
 
                 &__container {
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr;
 
                     &__prestation {
                         align-items: center;

@@ -3,8 +3,8 @@ import Homecover from '@/components/HomeCover/homecover';
 import { Button } from '@/components/ui/button';
 import Footer from '@/layout-provider/footer';
 import Headernav from '@/layout-provider/header-nav';
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
 
 const Homepage = () => {
   return (
@@ -22,7 +22,7 @@ const Homepage = () => {
 
             {/* Section Bouton */}
             <div className='container__homecover__button'>
-              <Button className='container__homecover__button__primary'><Link href="https://www.planity.com/makeda-beauty-head-spa-67240-bischwiller">NOS SERVICES</Link></Button>
+              <Button className='container__homecover__button__primary'><Link className='container__homecover__button__primary__text' href="https://www.planity.com/makeda-beauty-head-spa-67240-bischwiller">NOS SERVICES</Link></Button>
             </div>
           </div>
         </div>

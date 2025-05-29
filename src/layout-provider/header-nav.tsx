@@ -58,13 +58,13 @@ const Headernav = () => {
                                 </Link>
                             </li>
                             {/* Shop */}
-                            <li>
-                                {/* <Link to="/"> */}
+                            {/* <li>
+                                {/* <Link to="/"> 
                                 <span className="container__footer__navigation__list__link">
                                     Shop
                                 </span>
-                                {/* </Link> */}
-                            </li>
+                                {/* </Link> 
+                            </li> */}
                             {/* Contact */}
                             <li>
                                 <Link href="/contact">
@@ -82,21 +82,21 @@ const Headernav = () => {
                                 {/* </Link> */}
                             </li>
                             {/* Panier */}
-                            <li>
-                                {/* <Link to="/"> */}
+                            {/* <li>
+                                {/* <Link to="/"> 
                                 <span className="container__footer__navigation__list__link">
                                     Panier
                                 </span>
-                                {/* </Link> */}
-                            </li>
+                                {/* </Link> 
+                            </li> */}
                         </ul>
                     </div>
                 </div>
 
                 {/* Login Button */}
-                <Button className='container__homecover__button__primary__header container__homecover__button__primary'>
+                {/* <Button className='container__homecover__button__primary__header container__homecover__button__primary'>
                     <Link href="/login">Se connecter</Link>
-                </Button>
+                </Button> */}
             </div>
         </div >
     )

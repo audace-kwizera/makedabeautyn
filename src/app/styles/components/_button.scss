@@ -13,6 +13,9 @@
 
             &__hairneedling {
                 padding: 40vh 0 0 0;
+                &__headspa {
+                    padding: 0;
+                }
             }
 
             &__headspa {
@@ -53,6 +56,10 @@
                     &__card {
                         padding: 0.5rem;
                     }
+                }
+
+                &__text {
+                    color: #FFFFFF;
                 }
             }
         }
