@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../utils/functions";
+
+
+.container {
+    &__card {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 2rem;
+
+        &__hairneedling {
+            grid-template-columns: 1fr 1fr;
+            display: grid;
+            gap: 1rem;
+            padding: 0 2rem;
+        }
+
+        &__side {
+            &__background {
+                &__image {
+                    width: 95vw;
+                    display: grid;
+                    height: 110vh;
+                    justify-content: end;
+                    grid-template-columns: 1fr;
+                    align-content: end;
+
+                    img {
+
+                        width: 70%;
+                        height: 100%;
+                        padding: 0 0 0 0rem;
+                        border-radius: 0;
+                        justify-self: end;
+
+                    }
+
+                    &__braids {
+                        object-fit: contain;
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+    }
+
+    &__body {
+        &__card {
+            display: grid;
+            gap: 2rem;
+        }
+    }
+
+    &__headspa {
+        padding: 2rem 10rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__hairneedling {
+        padding: 0 0 3rem 0;
+
+        &__card {
+            display: grid;
+            justify-content: space-around;
+            padding: 1rem;
+        }
+
+        &__body {
+            padding: 2rem 1rem;
+        }
+    }
+
+    &__policy {
+        &__header {
+            &__hairneedling {
+                padding: 3rem 0;
+
+                &__braids {
+                    padding: 5rem 0 !important;
+                }
+            }
+        }
+    }
+}
+
+.body {
+    &__card {
+        background-color: $background-color-fourth;
+        display: grid;
+        gap: 0.5rem;
+        border-radius: 25px;
+        padding: 1rem;
+        align-self: center;
+
+        &__center {
+            gap: 1rem;
+        }
+
+        &__side {
+            height: 80%;
+
+            &__hairneedling {
+                height: 100%;
+
+                &__card {
+                    grid-row: 1;
+                    z-index: 1;
+
+                    &__width {
+                        width: 45vw;
+
+                        &__braids {
+                            width: 60vw;
+                        }
+                    }
+                }
+            }
+
+            &__background {
+                padding: 10vw 0 0 25vw;
+                width: 60vw;
+                position: absolute;
+                align-content: flex-end;
+                grid-row: 2;
+                height: 100%;
+                background: transparent;
+
+                &__image {
+                    width: 92vw;
+                    height: 100vh;
+                    padding: 15vw 0 0 0vw;
+                    position: absolute;
+
+                    img {
+                        height: 100vh;
+                        justify-self: end;
+                        width: 55vw;
+                    }
+                }
+            }
+        }
+
+        &__hairneedling {
+            &__description {
+                font-size: 0.9rem;
+
+                &__container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    &__prestation {
+                        align-items: center;
+                    }
+                }
+            }
+
+            &__title {
+                display: grid;
+                gap: 0.5rem;
+                padding: 0.5rem 0;
+
+                &__name {
+                    font-size: 1.2rem;
+                    text-align: start;
+                }
+            }
+
+            &__image {
+                height: auto;
+                width: 100%;
+
+                &__photo {
+                    object-fit: contain;
+                }
+
+                &__cover {
+                    height: 45vh;
+                    object-fit: cover;
+                    border-radius: 25px;
+                    width: 100%;
+                }
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+
+        li {
+            list-style: initial;
+            font-size: 14px;
+            text-align: start;
+        }
+
+        button {
+            font-size: 16px;
+        }
+
+        &__headspa {
+            &__description {
+                font-size: 16px;
+            }
+
+            &__price {
+                font-size: 1rem;
+            }
+
+            &__title {
+                display: grid;
+                gap: 0.5rem;
+
+                &__name {
+                    font-size: 1.2rem;
+                }
+
+                &__time {
+                    font-size: 1.1rem;
+                }
+            }
+
+            &__image {
+                border-radius: 25px;
+                width: 100%;
+                height: 40vh;
+                object-fit: cover;
+
+                img {
+                    width: 100%;
+                    height: 175px;
+                }
+
+                &__center {
+                    border-radius: 25px;
+                    width: 100%;
+                    height: 60vh;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+/*========================= Big Tablet ==================================*/
+
+@include maxBigTablet__1199 {
+    .container {
+        &__card {
+            grid-template-columns: 1fr;
+            gap: 5rem;
+        }
+    }
+
+    .body {
+        &__card {
+            &__headspa {
+                &__image {
+                    height: 50vh;
+
+                    &__center {
+                        height: 50vh;
+                    }
+                }
+            }
+
+            &__side {
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+/*========================= Tablet ==================================*/
+@include maxTablet__839 {
+    .container {
+        &__headspa {
+            padding: 2rem 5rem;
+        }
+
+        &__card {
+            &__hairneedling {
+                gap: 0;
+            }
+
+            &__side {
+                &__background {
+                    &__image {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &__hairneedling {
+            &__body {
+                padding: 2rem 0;
+            }
+        }
+    }
+
+    .body {
+        &__card {
+            &__side {
+                &__background {
+                    &__image {
+                        position: relative;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &__hairneedling {
+                    &__card {
+                        &__width {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*========================= Big Smartphone ==================================*/
+@include maxMobile__669 {
+    .container {
+        &__headspa {
+            padding: 2rem 2rem;
+        }
+    }
+}
+
+/*========================= Smartphone ==================================*/
+@include maxSmallMobile__399 {
+    .container {
+        &__card {
+            padding: 0;
+        }
+
+        &__policy {
+            &__header {
+                &__hairneedling {
+                    padding: 0;
+                }
+            }
+        }
+        &__homecover {
+            &__button {
+                &__hairneedling {
+                    padding: 0;
+                }
+                &__primary {
+                    &__hairneedling {
+                        &__card {
+                            padding: 0.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .body {
+        &__card {
+            &__side {
+                &__hairneedling {
+                    &__card {
+                        &__width {
+                            padding: 0.1rem;
+                        }
+                    }
+                }
+
+            }
+
+            &__hairneedling {
+                &__description {
+                    font-size: 0.6rem;
+
+                    span {
+                        padding: 20px;
+                    }
+
+                    &__container {
+                        display: flow;
+                    }
+                }
+
+
+            }
+        }
+    }
+}

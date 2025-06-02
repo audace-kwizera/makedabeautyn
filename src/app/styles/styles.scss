@@ -6,6 +6,9 @@
 @import './components/carousel';
 @import './components/container';
 @import './components/form';
+@import './components/list';
+@import './components/menu';
+@import './components/card';
 
 /*========================== layout ==============================*/
 @import './layout/footer';
@@ -18,6 +21,8 @@
 @import './pages/login';
 @import './pages/register';
 @import './pages/service';
+@import './pages/contact';
+@import './pages/policy';
 
 /*========================== themes ==============================*/
 @import './themes/themes';
@@ -26,3 +31,8 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/functions';
+
+/*========================== global ==============================*/
+// @import './../globals';
+// @import './../page.module';
+

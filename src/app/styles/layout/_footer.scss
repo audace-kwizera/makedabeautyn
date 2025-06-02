@@ -8,8 +8,7 @@
         text-align: center;
         display: grid;
         justify-content: center;
-        min-width: 100vw;
-        gap: 2rem;
+        gap: 1.5rem;
         padding: 1rem 0;
 
         &__logo {
@@ -30,6 +29,9 @@
                 &__title {
                     font-size: 24px;
                     color: $text-color-firth;
+                    font-weight: 500;
+                    letter-spacing: 0.03rem;
+
                     &:hover {
                         cursor: pointer;
                     }
@@ -40,16 +42,18 @@
         &__navigation {
             &__list {
                 display: flex;
-                gap: 2rem;
                 flex-wrap: wrap;
+                gap: 2rem;
+                padding: 1rem;
                 justify-content: center;
                 &__link {
-                    font-size: 14px;
+                    font-size: 12px;
                     &:hover {
                         color: $text-color-firth;
                         cursor: pointer;
                     }
                     &__social {
+                        font-size: 18px;
                         color: $text-color-firth;
                         &:hover {
                             cursor: pointer;
@@ -59,5 +63,41 @@
             }
         }
 
+        &__title {
+            h5 {
+                font-size: 0.7rem;
+                color: $text-color-seven;
+                font-weight: 500;
+                letter-spacing: 0.04rem;
+            }
+        }
+
     }
 }
+
+/*============================= Tablet ==============================*/
+@include maxTablet__839 {
+    .container {
+        &__footer {
+            &__navigation {
+                &__list {
+                    gap: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+/*============================= Big Mobile ==============================*/
+@include maxMobile__669 {
+    .container {
+        &__footer {
+            &__navigation {
+                &__list {
+                    gap: 0.5rem;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+} 

@@ -10,8 +10,8 @@ const Homecover = () => {
                 {/* La vidéo */}
                 <video
                     autoPlay
-                    loop
-                    controls
+                    loop={true}
+                    muted
                     className='background__video__cover'
                 >
                     <source src="https://res.cloudinary.com/dahc6jmn4/video/upload/c_fill,h_1920,w_1800/v1745529405/Affiche_A4_Nous_serons_ferme%CC%81s_Professionnel_E%CC%81le%CC%81gant_Beige_Blanc_n0jne0.mp4"
@@ -21,7 +21,7 @@ const Homecover = () => {
 
                 {/* Titre et dsecription */}
                 <div className='container__homecover__content'>
-                    <h1>Head Spa</h1>
+                    <h1 className='container__homecover__content__title'>Head Spa</h1>
                     <p>Améliorer votre santé capillaire et mentale</p>
                 </div>
             </div>

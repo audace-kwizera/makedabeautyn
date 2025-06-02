@@ -2,3 +2,108 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 @import "../utils/functions";
+
+.container {
+    &__form {
+        display: grid;
+        justify-content: center;
+        padding: 3rem 0rem;
+        gap: 2rem;
+
+        &__input {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-direction: column;
+
+            &__radio {
+                display: flex;
+                gap: 2rem;
+            }
+        }
+
+        &__link {
+            display: grid;
+            gap: 1rem;
+        }
+    }
+
+    &__body {
+        &__link {
+            padding: 0.5rem 0;
+        }
+    } 
+}
+
+.form {
+    &__input {
+        &__field {
+            padding: .5rem;
+        }
+
+        &__radio {
+            outline: none;
+            display: flex;
+            gap: 2rem;
+
+            &__login {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+            }
+        }
+    }
+
+    &__link {
+        &__register {
+            display: flex;
+            gap: 1rem;
+
+            &__submit {
+                color: $text-color-firth;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__title {
+        &__login {
+            text-align: center;
+            padding: 0 0 2rem 0;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 0.2rem;
+            font-family: 'Cormorant Garamond', Georgia, "Times New Roman", serif;
+            color: $text-color-nine;
+        }
+    }
+}
+
+/*========================= Big Smartphone ==================================*/
+@include maxTablet__839 {
+    .container {
+        &__body {
+            &__contact {
+                &__form {
+                    &__information {
+                        &__responsive {
+                            grid-template-columns: 1fr!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .body {
+        &__contact {
+            &__form {
+                &__input {
+                    width: 95%!important;
+                }
+            }
+        }
+    }
+}
+
+
+

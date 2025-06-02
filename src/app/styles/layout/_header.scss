@@ -8,6 +8,11 @@
         height: 10vh;
         align-items: center;
         justify-content: space-around;
+        display: flex;
+
+        &__border {
+            border-bottom: solid 0.5px $background-color-nine;
+        }
 
         &__logo {
             height: 3rem;
@@ -15,11 +20,15 @@
             gap: 0.1rem;
 
             &__image {
-                height: 2.5rem;
                 justify-items: center;
+                height: 40px;
+                width: auto;
+                display: flex;
+                align-self: center;
+                justify-content: center;
 
                 img {
-                    height: 100%;
+                    height: 40px;
                     border-radius: 50px;
                     width: auto;
                 }
@@ -30,8 +39,34 @@
                     font-size: 10px;
                     text-align: center;
                     color: $text-color-firth;
+                    align-content: center;
+                    align-content: baseline;
+                    font-weight: 500;
+                    letter-spacing: 0.02rem;
                 }
             }
         }
     }
 }
+ 
+/*========================= Big Mobile ==================================*/
+@include maxMobile__669 {
+   .container {
+        &__header {
+            padding: 1rem;
+        }
+    }
+}
+
+/*========================= Small Mobile ==================================*/
+@include maxSmallMobile__399 {
+    .container {
+        &__header {
+            flex-direction: column;
+            padding: 0.5rem 2rem;
+            height: 30vh;
+        }
+    }
+}
+
+

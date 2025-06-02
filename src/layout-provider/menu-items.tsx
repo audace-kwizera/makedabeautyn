@@ -24,7 +24,7 @@ function MenuItems({ openMenuItems, setOpenMenuItems }: MenuItemsProps) {
     const { user } = usersGlobalStore() as IUsersGlobalStore;
     const pathname = usePathname();
     const router = useRouter();
-
+    
     const onLogout = () => {
         try {
             Cookies.remove("token");
@@ -99,21 +99,25 @@ function MenuItems({ openMenuItems, setOpenMenuItems }: MenuItemsProps) {
                     <SheetTitle></SheetTitle>
                 </SheetHeader>
 
-                <div className="flex flex-col gap-10 mt-20 px-7">
+                <div className='container__menu'>
                     {menuItemsToRender.map((menuItem, index) => (
                         <div
-                            className={`flex gap-5 items-center p-2 rounded-md cursor-pointer
+                            className={`menu__slide
                         ${pathname === menuItem.route
                                     ? "bg-gray-100 border border-gray-500"
                                     : "text-gray-500"
                                 }
                     `}
                             key={index}
+                            onClick={()=>{
+                                router.push(menuItem.route)
+                                setOpenMenuItems(false)
+                            }}
                         >
-                            <div className='text-black'>
+                            <div className='menu__slide__icon'>
                                 {menuItem.icon}
                             </div>
-                            <span className="text-sm! text-black">
+                            <span className='menu__slide__title'>
                                 {menuItem.title}
                             </span>
                         </div>
