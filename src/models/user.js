@@ -30,8 +30,8 @@ const userSchema = new mongoose.Schema({
         expiresAt: {
             type: Date,
             default: () => new Date(Date.now() + 10 * 60 * 1000), // 10 min
-        }
-    }
+        },
+    },
 }, { timestamps: true });
 
 userSchema.plugin(uniqueValidator);
