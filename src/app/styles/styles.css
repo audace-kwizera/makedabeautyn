@@ -51,6 +51,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
@@ -119,6 +120,9 @@ Link, a {
 .container__homecover__button__hairneedling {
   padding: 40vh 0 0 0;
 }
+.container__homecover__button__hairneedling__mobile {
+  display: none;
+}
 .container__homecover__button__hairneedling__headspa {
   padding: 0;
 }
@@ -154,7 +158,29 @@ Link, a {
 .container__homecover__button__primary__text {
   color: #FFFFFF;
 }
+.container__braid__button__mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 1199px) {
+  .container__homecover__button__hairneedling__mobile {
+    display: block;
+    padding: 3rem 0 0 0;
+  }
+}
+@media only screen and (max-width: 839px) {
+  .container__braid__button__mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 669px) {
+  .container__homecover__button__hairneedling {
+    padding: 0;
+  }
+  .container__homecover__button__hairneedling__mobile {
+    padding: 6rem 0 0;
+  }
+}
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/
 /*================================================ Navbar ===============================================*/
@@ -299,6 +325,12 @@ Link, a {
   text-align: center;
   gap: 2rem;
 }
+.container__cils__content {
+  padding: 0 4rem;
+}
+.container__cils__content__button {
+  padding: 10vh 0 0;
+}
 
 @media (min-width: 1920px) and (max-width: 2039px) {
   .container__homecover__content__logo__container {
@@ -332,6 +364,49 @@ Link, a {
   .container__homecover__content__logo__container {
     padding: 4rem 1rem 1rem;
   }
+  .container__hairneedling {
+    padding: 0;
+  }
+  .container__hairneedling__body__mobile {
+    display: flex !important;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+  .container__braid__body__mobile {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .container__contact__header {
+    padding: 0;
+  }
+  .container__contact__header__mobile {
+    padding: 0 !important;
+  }
+  .container__contact__header__title__contact__mobile {
+    padding: 0 !important;
+    font-size: 2rem !important;
+  }
+  .container__contact__header__description__contact__mobile {
+    flex-wrap: wrap;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .container__body__contact {
+    padding: 2rem !important;
+  }
+  .container__body__form__mobile {
+    padding: 2rem 1rem;
+  }
+  .body__card__side__background__image__mobile {
+    padding: 0 !important;
+  }
+  .body__card__side__hairneedling__card__width__braids__mobile {
+    padding: 6rem 0 0;
+  }
+  .body__card__hairdneedling__image__mobile {
+    position: absolute;
+  }
 }
 @media only screen and (max-width: 669px) {
   .container__homecover__content__logo {
@@ -346,6 +421,12 @@ Link, a {
   .container__homecover__content p {
     font-size: 14px;
   }
+  .container__homecover__button__hairneedling__mobile {
+    padding: 4rem 0 0;
+  }
+  .container__contact__header__description__contact {
+    padding: 1rem !important;
+  }
 }
 @media only screen and (max-width: 399px) {
   .container__homecover {
@@ -359,6 +440,22 @@ Link, a {
   }
   .container__homecover__content__logo__container {
     padding: 0rem 1rem 0;
+  }
+  .container__braid__body__mobile {
+    gap: 2rem !important;
+  }
+  .container__contact__header__title__contact__mobile {
+    font-size: 1.5rem !important;
+  }
+  .container__contact__header__description__contact {
+    font-size: 1rem !important;
+    padding: 0 !important;
+  }
+  .container__body__contact {
+    padding: 1rem !important;
+  }
+  .body__card__side__background__image__braids__mobile {
+    padding: 0 !important;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -571,7 +668,7 @@ ul {
   gap: 2rem;
 }
 .container__headspa {
-  padding: 2rem 10rem;
+  padding: 2rem 5rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -602,6 +699,9 @@ ul {
   padding: 1rem;
   align-self: center;
 }
+.body__card__braid__image__mobile {
+  height: 85vh !important;
+}
 .body__card__center {
   gap: 1rem;
 }
@@ -619,7 +719,8 @@ ul {
   width: 45vw;
 }
 .body__card__side__hairneedling__card__width__braids {
-  width: 60vw;
+  width: 50vw;
+  padding: 2rem;
 }
 .body__card__side__background {
   padding: 10vw 0 0 25vw;
@@ -629,6 +730,9 @@ ul {
   grid-row: 2;
   height: 100%;
   background: transparent;
+}
+.body__card__side__background__braid {
+  align-content: flex-start;
 }
 .body__card__side__background__image {
   width: 92vw;
@@ -641,15 +745,27 @@ ul {
   justify-self: end;
   width: 55vw;
 }
+.body__card__side__background__image__braids__mobile {
+  padding: 0;
+}
 .body__card__hairneedling__description {
   font-size: 0.9rem;
 }
 .body__card__hairneedling__description__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 .body__card__hairneedling__description__container__prestation {
   align-items: center;
+  gap: 0.2rem;
+}
+.body__card__hairneedling__description__text {
+  font-size: 18px;
+}
+.body__card__hairneedling__description__titre {
+  gap: 0.2rem;
+  padding: 0.3rem;
+  font-size: 22px;
 }
 .body__card__hairneedling__title {
   display: grid;
@@ -680,27 +796,27 @@ ul {
 }
 .body__card li {
   list-style: initial;
-  font-size: 14px;
+  font-size: 8px;
   text-align: start;
 }
 .body__card button {
   font-size: 16px;
 }
 .body__card__headspa__description {
-  font-size: 16px;
+  font-size: 12px;
 }
 .body__card__headspa__price {
-  font-size: 1rem;
+  font-size: 15px;
 }
 .body__card__headspa__title {
   display: grid;
   gap: 0.5rem;
 }
 .body__card__headspa__title__name {
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 .body__card__headspa__title__time {
-  font-size: 1.1rem;
+  font-size: 16px;
 }
 .body__card__headspa__image {
   border-radius: 25px;
@@ -766,11 +882,21 @@ ul {
   .container__headspa {
     padding: 2rem 2rem;
   }
+  .container__card__side__background__image__photo {
+    height: 80vh;
+  }
+  .body__card__braid__image__mobile {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 /*========================= Smartphone ==================================*/
 @media only screen and (max-width: 399px) {
   .container__card {
     padding: 0;
+  }
+  .container__card__side__background__image__photo {
+    height: 60vh;
   }
   .container__policy__header__hairneedling {
     padding: 0;
@@ -794,6 +920,41 @@ ul {
     display: flow;
   }
 }
+/*============================================== Background =============================================*/
+/*============================================== Text Color ==============================================*/
+/*================================================ Navbar ===============================================*/
+/*============================================== Error color =============================================*/
+/*=========================================== Success color ==============================================*/
+/*================================================ Button ================================================*/
+/*================================================ Tooltip Background ================================================*/
+/*============================================== Text Size ==============================================*/
+/*============================================== Button Size ==============================================*/
+/*============================================== Navbar Size ==============================================*/
+/*============================================== list Size ==============================================*/
+/*============================================== input Color ==============================================*/
+/*================================================= Shadow ================================================*/
+/*================================================= Border ================================================*/
+/*============================================= Link  ============================================*/
+/*============================================= Link hover ============================================*/
+/*================================================= li ================================================*/
+/*================================================= checkbox
+================================================*/
+/*================================================= menu ================================================*/
+/*================================================= search ================================================*/
+/*============================================== Price color =============================================*/
+/*============================================ Table Background ===========================================*/
+/*============================================ Discount color ===========================================*/
+/*============================================ Processing color ===========================================*/
+/*============================================ Cubic Bezier ===========================================*/
+/*============================================ Svg 
+===========================================*/
+/* @include mobile() {
+    .title{
+        background-color: $background-color-primary;
+        display: none;
+    }
+}  */
+/*================================================= sidebar ================================================*/
 /*========================== layout ==============================*/
 /*============================================== Background =============================================*/
 /*============================================== Text Color ==============================================*/

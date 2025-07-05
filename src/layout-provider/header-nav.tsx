@@ -57,14 +57,22 @@ const Headernav = () => {
                                     </span>
                                 </Link>
                             </li>
-                            {/* Shop */}
-                            {/* <li>
-                                {/* <Link to="/"> 
-                                <span className="container__footer__navigation__list__link">
-                                    Shop
-                                </span>
-                                {/* </Link> 
-                            </li> */}
+                            {/* Pose De Cils */}
+                            <li>
+                                <Link href="/posedecils">
+                                    <span className="container__footer__navigation__list__link">
+                                        Pose De Cils
+                                    </span>
+                                </Link>
+                            </li>
+                            {/* Nos Forfaits */}
+                            <li>
+                                <Link href="/nosforfaits">
+                                    <span className="container__footer__navigation__list__link">
+                                        Nos Forfaits
+                                    </span>
+                                </Link>
+                            </li>
                             {/* Contact */}
                             <li>
                                 <Link href="/contact">

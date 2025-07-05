@@ -13,6 +13,11 @@
 
             &__hairneedling {
                 padding: 40vh 0 0 0;
+
+                &__mobile {
+                    display: none;
+                }
+
                 &__headspa {
                     padding: 0;
                 }
@@ -60,6 +65,59 @@
 
                 &__text {
                     color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    &__braid {
+        &__button {
+            &__mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+/////////////////////////////////////// Big Tablet //////////////////////////////////////
+@include maxBigTablet__1199 {
+    .container {
+        &__homecover {
+            &__button {
+                &__hairneedling {
+                    &__mobile {
+                        display: block;
+                        padding: 3rem 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/////////////////////////////////////// Tablet //////////////////////////////////////
+@include maxTablet__839 {
+    .container {
+        &__braid {
+            &__button {
+                &__mobile {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/////////////////////////////////////// Smartphone //////////////////////////////////////
+@include maxMobile__669  {
+    .container {
+        &__homecover {
+            &__button {
+                &__hairneedling {
+                    padding: 0;
+                    &__mobile {
+                       padding: 6rem 0 0;
+                    }
                 }
             }
         }

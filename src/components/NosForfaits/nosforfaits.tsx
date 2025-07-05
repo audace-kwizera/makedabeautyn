@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
 
-const BraidsBody = () => {
+const NosForfaitsBody = () => {
     return (
         <div className='container__hairneedling container__headspa container'>
             {/* Head Spa */}
@@ -10,7 +10,7 @@ const BraidsBody = () => {
                 {/* Title */}
                 <div className="container__policy__header__hairneedling__braid container__policy__header__hairneedling container__policy__header">
                     <span className="container__policy__header container__policy__header__title__body">
-                        NOS FORMULES
+                        NOS FORFAITS
                     </span>
                 </div>
 
@@ -28,19 +28,26 @@ const BraidsBody = () => {
                         </div> */}
                         {/* Title */}
                         <div className='body__card__hairneedling__title'>
-                            <span className='body__card__hairneedling__title__name'>BRAIDS PRESTATIONS</span>
+                            <span className='body__card__hairneedling__title__name'>Continuez votre voyage capillaire vers sa destination final: La guérison.</span>
+                            <span className='body__card__hairneedling__title__name'>"Retrouvez votre santé capillaire avec ce rituel d'exception inclus dans nos forfaits"</span>
                         </div>
+                        <br />
+                        <br />
                         {/* Prestation */}
                         {/* 1 seance 1 zone */}
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>2 à 4 Nattes collées avec extensions: </span>
+                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>Formule nirvana<br />+<br />6 séances de soins capillaires  personnalisée</span><br />
                                 {/* Description */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>"Le prix inclus les extensions avec le choix de la couleur.Veillez a bien démêler vos cheveux avant la prestation.</span>
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>Merci d'appeler au moment de la réservation pour s'assurer du choix de la couleur."</span>
+                                <p className='body__card__hairneedling__description__text body__card__hairneedling__description'>"Conçu pour répondre aux besoins unique de votre chevelure,d'assurer un suivi personnalisé  tout en prolongeant les bienfaits du head spa. Nous commençons par un Diagnostic capillaire approfondi: un bilan de santé de vos cheveux et cuir chevelu pour identifier leurs besoins.<br /><br />Nous enchainons avec le soin capillaire sur mesure:<br /> A chaque passage, un soin à base de poudres naturelles, poudres ayurvédique, huiles nourrissantes naturelles...<br />
+                                Ces soins garantis sans silicone,sans parabènes nourrissent et renforcent vos cheveux tout en respectant leur nature.
+                                Ce forfait est repartis sur deux séances par mois pendant 3 mois et chaque  RDV dure 30 minutes."</p><br />
+                                <p className='body__card__hairneedling__description__text body__card__hairneedling__description'>Merci d'appeler au moment de la réservation pour s'assurer du choix de la couleur.</p><br />
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 30 €</span>
+                                <p className='body__card__hairneedling__description__text body__card__hairneedling__description'> 4 h 30 min </p>
+                                {/* Prix */}
+                                <p className='body__card__hairneedling__description__text body__card__hairneedling__description'> 350 € </p>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -48,19 +55,19 @@ const BraidsBody = () => {
                                 </div> */}
                             </div>
                         </div>
+                        <br />
 
                         {/* Prestation */}
                         {/* 1 seance 2 zones */}
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>6 a 8 nattes colles avec extensions: </span>
-                                {/* Description */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>"Le prix inclus les extensions avec le choix de la couleur.Veillez a bien démêler vos cheveux avant la prestation.</span><span className='body__card__hairneedling__description__text body__card__hairneedling__description'>Merci d'appeler au moment de la réservation pour s'assurer du choix de la couleur."</span>
+                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>Formule nirvana<br />+<br />Nattes collés ( 2 à 6 ) avec extensions</span>
+                                <br />
                                 {/* Temps */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 1h 45min </span>
+                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>2 h 30 min</span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 35 € €</span>
+                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 170 € </span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -68,19 +75,18 @@ const BraidsBody = () => {
                                 </div> */}
                             </div>
                         </div>
+                        <br />
 
                         {/* Prestation */}
                         {/* 4 seance */}
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>2 à 4 Nattes collées sans extensions: </span>
-                                {/* Description */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>"Merci de  bien démêler vos cheveux avant la prestation."</span>
+                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>Formule nirvana<br />+<br />Nattes collés ( 2 à 6 ) avec extensions</span>
                                 {/* Temps */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 30min </span>
+                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>2 h 15 min</span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 20 €</span>
+                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 160 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -88,19 +94,18 @@ const BraidsBody = () => {
                                 </div> */}
                             </div>
                         </div>
+                        <br />
 
                         {/* Prestation */}
                         {/* 6 séances */}
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>6 a 8 nattes collees sans extension: </span>
-                                {/* Description */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>"Merci de  bien démêler vos cheveux avant la prestation."</span>
+                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>Formule diadème<br />+<br />Nattes collés ( 2 à 6 ) avec extensions</span>
                                 {/* Temps */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 1h 30min </span>
+                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 2 h 15 min </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 25 €</span>
+                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 140 €</span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -108,20 +113,18 @@ const BraidsBody = () => {
                                 </div> */}
                             </div>
                         </div>
+                        <br />
 
                         {/* Prestation */}
                         {/* 6 séances */}
                         <div>
                             <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
                                 {/* Titre */}
-                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>Knotless braids: </span>
-                                {/* Description */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>"Cette prestation ne peut pas être réservée en ligne."</span>
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>Merci d'appeler le 07 51 58 61 04.</span>
+                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>Formule diadème<br />+<br />Nattes collés ( 2 à 6 ) avec extensions</span>
                                 {/* Temps */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 2h </span>
+                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 2 h </span>
                                 {/* Prix */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> à partir de 80 € </span>
+                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 115 € </span>
                                 {/* Bouton */}
                                 {/* Section Bouton */}
                                 {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
@@ -129,48 +132,7 @@ const BraidsBody = () => {
                                 </div> */}
                             </div>
                         </div>
-
-                        {/* Prestation */}
-                        {/* 6 séances */}
-                        <div>
-                            <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
-                                {/* Titre */}
-                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>Vanilles: </span>
-                                {/* Description */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>"Cette prestation ne peut pas être réservée en ligne." </span>
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>Merci d'appeler le 07 51 58 61 04.</span>
-                                {/* Temps */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 2h </span>
-                                {/* Prix */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> à partir de 50 €</span>
-                                {/* Bouton */}
-                                {/* Section Bouton */}
-                                {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
-                                    <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
-                                </div> */}
-                            </div>
-                        </div>
-
-                        {/* Prestation */}
-                        {/* 6 séances */}
-                        <div>
-                            <div className='body__card__hairneedling__description__container__prestation body__card__hairneedling__description__container'>
-                                {/* Titre */}
-                                <span className='body__card__hairneedling__description__titre body__card__hairneedling__description'>Crochet vixen: </span>
-                                {/* Description */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>"Cette prestation ne peut pas être réservée en ligne."</span> 
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'>Merci d'appeler le 07 51 58 61 04.</span>
-                                {/* Temps */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 3h </span>
-                                {/* Prix */}
-                                <span className='body__card__hairneedling__description__text body__card__hairneedling__description'> 70 €</span>
-                                {/* Bouton */}
-                                {/* Section Bouton */}
-                                {/* <div className='container__homecover__button__primary__hairneedling__card container__homecover__button__headspa__card container__homecover__button'>
-                                    <Button className='container__homecover__button__primary__headspa__card container__homecover__button__primary'>PRENDRE RDV</Button>
-                                </div> */}
-                            </div>
-                        </div>
+                        <br />
                     </div>
 
                     {/* Bouton */}
@@ -181,8 +143,8 @@ const BraidsBody = () => {
 
                     {/* Image */}
                     {/* <div className='body__card__side__background__image__braids__mobile body__card__side__background__image__braids body__card__side__background__image body__card__side__background container__body__card__hairneedling body__card__side body__card'> */}
-                        {/* Photo */}
-                        {/* <div className='container__card__side__background__image__photo container__card__side__background__image'>
+                    {/* Photo */}
+                    {/* <div className='container__card__side__background__image__photo container__card__side__background__image'>
                             <img
                                 src="https://res.cloudinary.com/dahc6jmn4/image/upload/v1720286916/pexels-j-scott-photography-67121182-9702500_jvtfcd.jpg"
                                 alt="Braids Image"
@@ -208,4 +170,4 @@ const BraidsBody = () => {
     )
 }
 
-export default BraidsBody
+export default NosForfaitsBody

@@ -6,9 +6,9 @@ const Contactbody = () => {
     <div className='container container__contact'>
 
       {/* Title */}
-      <div className='container__contact__header'>
-        <span className='container__contact__header__title__contact container__contact__header container__contact__header__title'>CONTACT</span>
-        <span className='container__contact__header__description__contact container__contact__header container__contact__header__description'>N'hésitez pas à nous contacter pour plus d'informations, ou envoyer nous un message en remplissant ce formulaire</span>
+      <div className='container__contact__header__mobile container__contact__header'>
+        <span className='container__contact__header__title__contact__mobile container__contact__header__title__contact container__contact__header container__contact__header__title'>CONTACT</span>
+        <span className='container__contact__header__description__contact__mobile container__contact__header__description__contact container__contact__header container__contact__header__description'>N'hésitez pas à nous contacter pour plus d'informations, ou envoyer nous un message en remplissant ce formulaire</span>
       </div>
 
       {/* Informations */}
@@ -32,7 +32,7 @@ const Contactbody = () => {
       </div>
 
       {/* Formulaire */}
-      <div className='container__body container__body__contact'>
+      <div className='container__body__form__mobile container__body container__body__contact'>
 
         {/* Form */}
         <div className='container__body__contact__form'>

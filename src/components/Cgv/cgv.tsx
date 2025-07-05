@@ -11,6 +11,19 @@ const Cgvbody = () => {
                     </span>
                 </div>
 
+                {/* Moi */}
+                <div className="container__policy__body container__policy__body__description">
+                    <span className='container__policy__body container__policy__body__description'>
+                        Myrvana est une praticienne passionnée, gérante de  Makeda Beauty & Head Spa situé à Bischwiller. Elle est spécialisée dans diverses prestations dont  la réalisation de tresses africaine, le massage et les soins capillaires. C'est une experte dans le domaine de la coiffure afro et des extensions. Elle offre des services de tressage exquis, idéaux pour sublimer votre beauté naturelle.
+                    </span>
+                    <span className='container__policy__body container__policy__body__description'>
+                        Au sein de cet institut de beauté, elle prend plaisir à mettre à profit son savoir-faire afin de vous offrir des soins de qualité, adaptés à vos besoins spécifiques. L'un des services uniques qu'elle propose est le head spa, une expérience de bien-être total pour vos cheveux et votre cuir chevelu. Un autre service exceptionnel qu'elle offre est le hairneedling, une technique de pointe pour traiter les personnes qui souffrent d’alopécie ou de perte de cheveux.
+                    </span>
+                    <span className='container__policy__body container__policy__body__description'>
+                        Que ce soit pour une coiffure de mariage glamour ou simplement pour chouchouter vos cheveux avec un soin profond, Myrvana saura répondre à vos attentes. Venez découvrir la magie de ses talents à Makeda Beauty & Head Spa. Elle est impatiente de vous servir !
+                    </span>
+                </div>
+
                 {/* Description */}
                 <div className="container__policy__body container__policy__body__description">
                     <span className='container__policy__body container__policy__body__description'>

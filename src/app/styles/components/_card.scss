@@ -56,7 +56,7 @@
     }
 
     &__headspa {
-        padding: 2rem 10rem;
+        padding: 2rem 5rem;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -91,6 +91,14 @@
 
 .body {
     &__card {
+        &__braid {
+            &__image {
+                &__mobile {
+                    height: 85vh!important;
+                }
+            }
+        }
+
         background-color: $background-color-fourth;
         display: grid;
         gap: 0.5rem;
@@ -116,7 +124,8 @@
                         width: 45vw;
 
                         &__braids {
-                            width: 60vw;
+                            width: 50vw;
+                            padding: 2rem;
                         }
                     }
                 }
@@ -131,6 +140,10 @@
                 height: 100%;
                 background: transparent;
 
+                &__braid {
+                    align-content: flex-start;
+                }
+
                 &__image {
                     width: 92vw;
                     height: 100vh;
@@ -142,6 +155,12 @@
                         justify-self: end;
                         width: 55vw;
                     }
+
+                    &__braids {
+                        &__mobile {
+                            padding: 0;
+                        }
+                    }
                 }
             }
         }
@@ -152,11 +171,22 @@
 
                 &__container {
                     display: grid;
-                    grid-template-columns: 1fr 1fr;
+                    grid-template-columns: 1fr;
 
                     &__prestation {
                         align-items: center;
+                        gap: .2rem;
                     }
+                }
+
+                &__text {
+                    font-size: 18px;
+                }
+
+                &__titre {
+                    gap: 0.2rem;
+                    padding: 0.3rem;
+                    font-size: 22px;
                 }
             }
 
@@ -194,7 +224,7 @@
 
         li {
             list-style: initial;
-            font-size: 14px;
+            font-size: 8px;
             text-align: start;
         }
 
@@ -204,11 +234,11 @@
 
         &__headspa {
             &__description {
-                font-size: 16px;
+                font-size: 12px;
             }
 
             &__price {
-                font-size: 1rem;
+                font-size: 15px;
             }
 
             &__title {
@@ -216,11 +246,11 @@
                 gap: 0.5rem;
 
                 &__name {
-                    font-size: 1.2rem;
+                    font-size: 18px;
                 }
 
                 &__time {
-                    font-size: 1.1rem;
+                    font-size: 16px;
                 }
             }
 
@@ -336,6 +366,29 @@
         &__headspa {
             padding: 2rem 2rem;
         }
+        &__card {
+            &__side {
+                &__background {
+                    &__image {
+                        &__photo {
+                            height: 80vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .body {
+        &__card {
+            &__braid {
+                &__image {
+                    &__mobile {
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -344,6 +397,15 @@
     .container {
         &__card {
             padding: 0;
+            &__side {
+                &__background {
+                    &__image {
+                        &__photo {
+                            height: 60vh;
+                        }
+                    }
+                }
+            }
         }
 
         &__policy {
@@ -353,11 +415,13 @@
                 }
             }
         }
+
         &__homecover {
             &__button {
                 &__hairneedling {
                     padding: 0;
                 }
+
                 &__primary {
                     &__hairneedling {
                         &__card {
